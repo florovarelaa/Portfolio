@@ -13,9 +13,27 @@ class Landing extends Component {
                             className='avatar-img'
                         />
                         <div className="banner-text">
-                            <h1>Full Stack Web Developer</h1>
+                            <h1>Florencio Varela - Web Developer</h1>
                             <hr />
                             <p>HTML/CSS | Javascript | Bootstrap | React </p>
+                            <div className="social-links"> 
+                                {/* Linkedin */}
+                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-linkedin-square" aria-hidden="true" />
+                                </a>
+                                {/* GitHub */}
+                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-github-square" aria-hidden="true" />
+                                </a>
+                                {/* Facebook */}
+                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-facebook-square" aria-hidden="true" />
+                                </a>
+                                {/* Instagram */}
+                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                    <i className="fa fa-instagram" aria-hidden="true" />
+                                </a>
+                            </div>
                         </div>
                     </Cell>
                 </Grid>
