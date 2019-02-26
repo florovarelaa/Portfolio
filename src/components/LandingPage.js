@@ -15,7 +15,7 @@ class Landing extends Component {
                         <div className="banner-text">
                             <h1>Florencio Varela - Web Developer</h1>
                             <hr />
-                            <p>HTML/CSS | Javascript | Bootstrap | React </p>
+                            <p> HTML/CSS | JAVASCRIPT | BOOTSTRAP | REACT </p>
                             <div className="social-links"> 
                                 {/* Linkedin */}
                                 <a href="http://google.com" target="_blank" rel="noopener noreferrer">
