@@ -29,3 +29,18 @@
       margin: auto;
       padding-top: 1em;
   }
+
+  .contact-grid h2 {
+    font-family: 'Anton', sans-serif;
+  }
+
+  .contact-grid p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+  }
+
+  .contact-grid hr {
+    border-top: 5px dotted black;
+    width: 50%;
+    margin: auto;
+  }
