@@ -11,7 +11,7 @@ class Projects extends Component {
     toggleCategories() {
         if(this.state.activeTab === 0) {
             return(
-                <div>
+                <div className="projects-grid">
                     <Project 
                         title={'First Javascript Project'} 
                         description={'Project Description'}
@@ -31,7 +31,7 @@ class Projects extends Component {
             )
         } else if(this.state.activeTab === 1) {
             return(
-                <div>
+                <div className="projects-grid">
                     <Project 
                         title={'First React Project'} 
                         description={'Project Description'}
@@ -60,15 +60,13 @@ class Projects extends Component {
                     <Tab>React</Tab>
                 </Tabs>
 
-                <section>
-                    <Grid >
+                    <Grid>
                         <Cell col={12}>
-                            <div>
+                            <div className='content'>
                                 {this.toggleCategories()}
                             </div>
                         </Cell>
                     </Grid>
-                </section>
             </div>
         )
     }
