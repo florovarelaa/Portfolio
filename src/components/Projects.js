@@ -24,7 +24,7 @@ class Projects extends Component {
                         github={'www.google.com'}
                     />
                     <Project 
-                        title={'Third React Project'} 
+                        title={'Third Javascript Project'} 
                         description={'Project Description'}
                         github={'www.google.com'}
                     />
@@ -55,10 +55,12 @@ class Projects extends Component {
 
     render () {
         return(
-            <div className="category-tabs">
+            <div >
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>Javascript</Tab>
-                    <Tab>React</Tab>
+                    <div className="projects-tab">
+                        <Tab>Javascript</Tab>
+                        <Tab>React</Tab>
+                    </div>
                 </Tabs>
 
                     <Grid>
