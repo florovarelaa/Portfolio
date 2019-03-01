@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 import Project from './Project'
+import './Projects.css'
 
 class Projects extends Component {
     constructor(props) {

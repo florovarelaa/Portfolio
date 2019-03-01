@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from 'react-mdl'
+import './Project.css'
 
 const Project = (props) => {
     return (

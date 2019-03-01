@@ -7,34 +7,41 @@ class Contact extends Component {
         return(
             <div className="contact-body">
                 <Grid className="contact-grid">
-                    {/* Left Side */}
-                    <Cell className="contact-left" col={6}>
-                        <h2>Florencio Varela</h2>
-                        <img className="contact-img"
-                            src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-                            alt="avatar"
-                        />
-                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                        </p>
-                    </Cell>
                     {/* Right Side */}
-                    <Cell col={6}>
-                        <h2>Contact Me</h2>
+                    <Cell className="contact-grid-cell">
+                        <div className="contact-grid-title">
+                            <h2>CONTACT</h2>
+                        </div>
                         <hr />
                         <div className="contact-list">
                             <List>
                                 <ListItem className="contact-list-item">
                                     <ListItemContent>
-                                        <i className="fa fa-phone-square" aria-hidden="true" /> 1234567890
+                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-linkedin-square" aria-hidden="true" /> LinkedIn
+                                    </a>
                                     </ListItemContent>
                                 </ListItem>
-                                <ListItem>
-                                    <ListItemContent >Aaron Paul</ListItemContent>
+                                <ListItem className="contact-list-item">
+                                    <ListItemContent>
+                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-github-square" aria-hidden="true" /> GitHub
+                                    </a>
+                                    </ListItemContent>
                                 </ListItem>
-                                <ListItem>
-                                    <ListItemContent >Bob Odenkirk</ListItemContent>
+                                <ListItem className="contact-list-item">
+                                    <ListItemContent>
+                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-facebook-square" aria-hidden="true" /> Facebook
+                                    </a>    
+                                    </ListItemContent>
+                                </ListItem>
+                                <ListItem className="contact-list-item">
+                                    <ListItemContent>
+                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-instagram" aria-hidden="true" /> Instagram
+                                    </a>    
+                                    </ListItemContent>
                                 </ListItem>
                             </List>
                         </div>
