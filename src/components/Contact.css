@@ -44,3 +44,14 @@
     width: 50%;
     margin: auto;
   }
+
+  .contact-list i {
+    font-size: 70px;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .contact-list-item {
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+  }

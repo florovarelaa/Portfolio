@@ -13,7 +13,7 @@ class App extends Component {
             <Header className="header-color" title="Title" scroll>
                 <Navigation>
                     <Link to="/resume">Resume</Link>
-                    <Link to="/aboutme">About Me</Link>
+                    <Link to="/about">About Me</Link>
                     <Link to="/projects">Projects</Link>
                     <Link to="/contact">Contact</Link>
                 </Navigation>
@@ -21,7 +21,7 @@ class App extends Component {
             <Drawer title="Title">
                 <Navigation>
                     <Link to="/resume">Resume</Link>
-                    <Link to="/aboutme">About Me</Link>
+                    <Link to="/about">About</Link>
                     <Link to="/projects">Projects</Link>
                     <Link to="/contact">Contact</Link>
                 </Navigation>
