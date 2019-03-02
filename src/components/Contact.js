@@ -7,12 +7,14 @@ class Contact extends Component {
         return(
             <div className="contact-body">
                 <Grid className="contact-grid">
-                    {/* Right Side */}
                     <Cell className="contact-grid-cell">
                         <div className="contact-grid-title">
                             <h2>CONTACT</h2>
                         </div>
                         <hr />
+
+                        {/* REACER CON UN CSS COPADO */}
+
                         <div className="contact-list">
                             <List>
                                 <ListItem className="contact-list-item">

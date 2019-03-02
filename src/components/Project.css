@@ -1,0 +1,18 @@
+.project-card {
+    min-width: 350px;
+    margin: 'auto';
+    transition: .6s;
+}
+
+.project :hover{
+    transform: scale(1.1);
+}
+
+.project-card-menu {
+    color: white;
+}
+
+.project-card-title {
+    color: white;
+    height: 175px;
+}

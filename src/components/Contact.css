@@ -65,4 +65,5 @@
     font-family: 'Anton', sans-serif;
     padding-right: 1em;
     padding-left: 1em;
+    transition: .4s;
   }

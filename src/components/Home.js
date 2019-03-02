@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import './Home.css';
-import avatar from '../avatar.jpg'
+// import logo from './logo.jpg'
 
 class Home extends Component {
     render () {
@@ -9,11 +9,11 @@ class Home extends Component {
             <div sytle={{width: '100%', margin:'auto'}}>
                 <Grid className='landing-grid'>
                     <Cell col={12}>
-                        <img 
-                            src={avatar}
-                            alt='avatar'
-                            className='avatar-img'
-                        />
+                        {/* <img 
+                            src={logo}
+                            alt='logo'
+                            className='logo-img'
+                        /> */}
                         <div className="banner-text">
                             <h1>Florencio Varela - Web Developer</h1>
                             <hr />

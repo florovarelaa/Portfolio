@@ -1,13 +1,13 @@
 .landing-grid {
     text-align: center;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    padding-top: 10em;
   }
 
-  .avatar-img {
+  .logo-img {
     height: 250px;
     padding-top: 5em;
     border-radius: 10px;
@@ -22,6 +22,7 @@
   border-radius: 10px;
   padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 .banner-text h1 {
@@ -52,5 +53,10 @@
 .social-links i {
   color: white;
   font-size: 3em;
-  padding: 8px;
+  padding: 0px;
+  transition: .3s;
+}
+
+.social-links i:hover {
+  color: #9b59b6;
 }
