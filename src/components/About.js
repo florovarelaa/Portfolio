@@ -5,10 +5,11 @@ class About extends Component {
     render () {
         return(
             <div className="banner-text">
-                    <p>Hello my name is <span>Florencio Varela</span> I'm an Informatic Engineering student and Web Developer from Argentina.</p>
-                    <p>I'm quietly confident, naturally curious, and perpetually improving my chops. I design and code beautifully simple things, and I love what I do.</p>
+                    <p>Hello my name is <span className="about-name">Florencio Varela</span>.</p>
+                    <p>I'm an <span>Informatic Engineering</span> student and <span>Web Developer</span> from Argentina.</p>
+                    <p>I'm quietly confident, naturally curious, and perpetually improving my chops. I design and code beautifully simple things, and I <span>love what I do</span>.</p>
                     <p>I started my career as a QA tester.
-                    This brought me the possibility to develop skills such as:</p>
+                    This brought me the possibility to develop different <span>skills</span> such as:</p>
                     <ul>
                         <li>Problem-Solving Skills</li>
                         <li>Analytical Thinking</li>
@@ -16,7 +17,7 @@ class About extends Component {
                         <li>Experience with Agile Development Process</li>
                     </ul>
                     <p>After obtaining knowledge and experience as a member of the QA team I migrated to building things!</p>
-                    <p>As a developer I enjoy building fast and responsive applications.</p>
+                    <p>As a developer I enjoy building <span>Fast & Responsive</span> applications.</p>
                     
             </div>
         )

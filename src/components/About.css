@@ -1,3 +1,28 @@
-.banner-text ul {
+.banner-text {
     color: white;
+}
+
+.banner-text span {
+    font-size: 120%;
+    color: rgba(46, 145, 238, 0.849);
+
+}
+
+.banner-text p{
+    margin: 0px;
+    padding: 15px;
+}
+
+.banner-text li {
+    font-size: 130%;
+    font-family: "Libre Baskerville", serif; 
+    list-style-type: circle;
+    margin: 3px;
+    padding: auto;
+    justify-content: left;
+}
+
+.about-name {
+    font-size: 150% !important;
+    text-decoration: underline;
 }
