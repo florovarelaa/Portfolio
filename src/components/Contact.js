@@ -12,41 +12,39 @@ class Contact extends Component {
                             <h2>CONTACT</h2>
                         </div>
                         <hr />
-
-                        {/* REACER CON UN CSS COPADO */}
-
                         <div className="contact-list">
                             <List>
                                 <ListItem className="contact-list-item">
                                     <ListItemContent>
-                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-linkedin-square" aria-hidden="true" /> LinkedIn
+                                    <a href="https://www.linkedin.com/in/florovarelaa/" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-linkedin-square" aria-hidden="true" /> <span>/florovarelaa</span>
                                     </a>
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem className="contact-list-item">
                                     <ListItemContent>
-                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-github-square" aria-hidden="true" /> GitHub
+                                    <a href="https://github.com/florovarelaa" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-github-square" aria-hidden="true" /> <span>/florovarelaa</span>
                                     </a>
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem className="contact-list-item">
                                     <ListItemContent>
-                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-facebook-square" aria-hidden="true" /> Facebook
+                                    <a href="https://www.facebook.com/florovarelaa" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-facebook-square" aria-hidden="true" /> <span>/florovarelaa</span>
                                     </a>    
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem className="contact-list-item">
                                     <ListItemContent>
-                                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-instagram" aria-hidden="true" /> Instagram
+                                    <a href="https://www.instagram.com/florovarelaa" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-instagram" aria-hidden="true" /> <span>/florovarelaa</span>
                                     </a>    
                                     </ListItemContent>
                                 </ListItem>
                             </List>
                         </div>
+                        
                     </Cell> 
                 </Grid>
             </div>
