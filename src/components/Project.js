@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from 'react-mdl'
+import { Card, CardTitle, CardActions, CardText, Button } from 'react-mdl'
 import './Project.css'
 
 const Project = (props) => {
@@ -15,13 +15,10 @@ const Project = (props) => {
                 <CardActions border>
                     <Button colored>
                         <a href={props.github} target="_blank" rel="noopener noreferrer">
-                            github
+                            Github
                         </a>
                     </Button>
                 </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                    <IconButton name='share' />
-                </CardMenu>
             </Card>
         </div>
     );
