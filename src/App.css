@@ -20,6 +20,11 @@ body {
   z-index: -1;
 }
 
+.navigation-link {
+  font-family: 'Dancing Script', cursive;
+  font-size: 150%;
+}
+
 .navigation-link:hover {
   color: rgba(46, 145, 238, 0.849);
 }

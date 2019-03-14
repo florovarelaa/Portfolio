@@ -19,6 +19,8 @@
   .contact-grid-title h2{
     width: 100%;
     font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: rgba(46, 145, 238, 0.849);
   }
 
   .contact-img {
@@ -43,6 +45,7 @@
 
   .contact-list a {  
     font-family: 'Dancing Script';
+    font-size: 130%;
     text-align: justify;
     color: white;
     padding: 8px;
