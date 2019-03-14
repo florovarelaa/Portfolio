@@ -15,7 +15,7 @@ class Home extends Component {
                             className='logo-img'
                         /> */}
                         <div className="banner-text">
-                            <h1>Florencio Varela - Web Developer</h1>
+                            <h1><span className="banner-text-name">Florencio Varela</span> - Web Developer</h1>
                             <hr />
                             <p> HTML/CSS | JAVASCRIPT | BOOTSTRAP | REACT </p>
                             <div className="social-links"> 

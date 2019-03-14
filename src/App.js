@@ -16,7 +16,7 @@ class App extends Component {
   particlesOptions = {
     particles: {
       number: {
-        value: 30,
+        value: 25,
         density: {
           enable: true, 
           value_area: 200,
@@ -40,6 +40,7 @@ class App extends Component {
         </div>
         <Blur radius={ this.state.blurOn ? '3px' : '0' } transition='400ms'>
         <Layout>
+            <Particles className="particles" params={this.particlesOptions} />
             <Header className="header-color" title=" " scroll>
                 <Navigation onClick={this.blurOn}>
                         <Link className='navigation-link' to="/home" >Home</Link>

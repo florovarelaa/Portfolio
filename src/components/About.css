@@ -5,7 +5,6 @@
 .banner-text span {
     font-size: 120%;
     color: rgba(46, 145, 238, 0.849);
-
 }
 
 .banner-text p{
@@ -23,6 +22,7 @@
 }
 
 .about-name {
+    font-family: 'Dancing Script', cursive;
     font-size: 150% !important;
     text-decoration: underline;
 }
