@@ -4,7 +4,6 @@ import './App.css';
 import Main from './components/Main'
 import { Layout, Header, Navigation, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
-import Particles from 'react-particles-js';
 import Blur from 'react-css-blur'
 
 class App extends Component {
@@ -14,17 +13,17 @@ class App extends Component {
     blurTime: 800,
   };
 
-  particlesOptions = {
-    particles: {
-      number: {
-        value: 25,
-        density: {
-          enable: true, 
-          value_area: 200,
-        },
-      }
-    }
-  }
+  // particlesOptions = {
+  //   particles: {
+  //     number: {
+  //       value: 25,
+  //       density: {
+  //         enable: true, 
+  //         value_area: 200,
+  //       },
+  //     }
+  //   }
+  // }
 
   blurOn = () => {
     this.setState({ blurOn: true });
@@ -37,7 +36,6 @@ class App extends Component {
     return (
       <div className="demo-big-content">
         <div>
-        <Particles className="particles" params={this.particlesOptions} />
         </div>
         <Blur radius={ this.state.blurOn ? '3px' : '0' } transition={`${this.state.blurTime}ms`}>
         <Layout>

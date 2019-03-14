@@ -4,12 +4,28 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import './index.css';
 import App from './App';
+import Particles from 'react-particles-js';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
+const particlesOptions = {
+    particles: {
+      number: {
+        value: 25,
+        density: {
+          enable: true, 
+          value_area: 200,
+        },
+      }
+    }
+  }
+
 ReactDOM.render(
             <BrowserRouter>
+            <div>
+                <Particles className="particles" params={particlesOptions} />
                 <App />
+            </div>
             </BrowserRouter>
             , document.getElementById('root'));
 
