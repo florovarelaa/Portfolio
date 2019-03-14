@@ -19,3 +19,9 @@ body {
   left: 0;
   z-index: -1;
 }
+
+.header-navbar {
+  font-family: 'Dancing Script', cursive;
+  left: 50%;
+  text-align: center;
+}

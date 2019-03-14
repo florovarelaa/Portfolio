@@ -11,7 +11,7 @@ class App extends Component {
   particlesOptions = {
     particles: {
       number: {
-        value: 30,
+        value: 25,
         density: {
           enable: true, 
           value_area: 200,
@@ -23,10 +23,10 @@ class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
-        <Particles className="particles" params={this.particlesOptions} />
         <Layout>
+            <Particles className="particles" params={this.particlesOptions} />
             <Header className="header-color" title=" " scroll>
-                <Navigation>
+                <Navigation className="header-navbar">
                     <Link to="/home">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/projects">Projects</Link>
