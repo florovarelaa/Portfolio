@@ -10,20 +10,8 @@ class App extends Component {
 
   state = {
     blurOn: false,
-    blurTime: 800,
+    blurTime: 500,
   };
-
-  // particlesOptions = {
-  //   particles: {
-  //     number: {
-  //       value: 25,
-  //       density: {
-  //         enable: true, 
-  //         value_area: 200,
-  //       },
-  //     }
-  //   }
-  // }
 
   blurOn = () => {
     this.setState({ blurOn: true });
@@ -49,7 +37,7 @@ class App extends Component {
             </Header>
             <Content>
                 <div className="page-content" />
-                <Main />
+                <Main className="main"/>
             </Content>
         </Layout>
         </Blur>

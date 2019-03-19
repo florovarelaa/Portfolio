@@ -44,7 +44,6 @@ class Contact extends Component {
                                 </ListItem>
                             </List>
                         </div>
-                        
                     </Cell> 
                 </Grid>
             </div>

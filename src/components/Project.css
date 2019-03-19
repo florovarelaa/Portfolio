@@ -1,6 +1,6 @@
 .project-card {
     min-width: 350px;
-    margin: 'auto';
+    margin: 1em;
 }
 
 .project {
@@ -19,4 +19,5 @@
 .project-card-title {
     color: white;
     height: 175px;
+    text-align: center;
 }

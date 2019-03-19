@@ -1,8 +1,16 @@
 .projects-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-
+  
   .category-tab {
+    font-family: 'Dancing Script', cursive;
     color: white;
+    font-size: 150%;
+  }
+  
+  .is-active {
+    color: rgba(46, 145, 238, 0.849) !important;
+    border: 1px solid rgba(46, 145, 238, 0.849) !important;
   }

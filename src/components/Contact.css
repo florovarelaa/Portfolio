@@ -79,6 +79,10 @@
     transition: transform 0.5s;
   }
 
+  .contact-list-item:hover {
+    border-bottom: 2px solid rgba(46, 145, 238, 0.849);
+  }
+
   .contact-list-item:hover i{
     transform: translateY(30%);
   }
