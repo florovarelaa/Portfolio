@@ -25,7 +25,7 @@ class Projects extends Component {
                         />
                     <Project 
                         title={'Car Insurance Estimation'} 
-                        description={'A javascript/bootstrap app that evaluates your car country, year and insurance type and returns and estimation'}
+                        description={'An app that evaluates your car country, year and insurance type and returns an estimation'}
                         github={'https://github.com/florovarelaa/car-insurance-estimation'}
                         />
                     <Project 

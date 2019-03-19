@@ -11,7 +11,6 @@
     text-align: center;
     justify-content: center;
     width: 80%;
-    height: 80%;
     color: white;
     margin-bottom: 20px;
   }
@@ -35,12 +34,12 @@
 
   .contact-list {
     position: absolute;
-    width: 100%;
     color: white;
     transform: translateY(-50%);
     text-align: center;
     left: 0;
-    top: 45%;
+    width: 100%;
+    top: 50%;
   }
 
   .contact-list a {  
