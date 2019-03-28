@@ -11,6 +11,7 @@ class App extends Component {
   state = {
     blurOn: false,
     blurTime: 500,
+    addClass: false,
   };
 
   blurOn = () => {
@@ -20,15 +21,29 @@ class App extends Component {
     }, this.state.blurTime);
   }
 
+  //switches state of addClass between true and false
+  toggleClass() {
+    this.setState({addClass: !this.state.addClass});
+  }
+
   render() {
+    let classToAdd = ["navigation-link"];
+    if (this.state.addClass) {
+      classToAdd.push("selected")
+    }
     return (
       <div className="demo-big-content">
         <div>
         </div>
-        <Blur radius={ this.state.blurOn ? '3px' : '0' } transition={`${this.state.blurTime}ms`}>
+        <Blur radius={ this.state.blurOn ? '5px' : '0' } transition={`${this.state.blurTime}ms`}>
         <Layout>
             <Header className="header-color" title=" " scroll>
-                <Navigation className="header-navigation" onClick={this.blurOn}>
+                <Navigation className={`header-navigation ${classToAdd.join('-')}`} onClick={ () => {
+                                                                    this.blurOn();
+                                                                    this.toggleClass.bind(this);
+                                                                    }
+                                                                  }
+                >
                         <Link className='navigation-link' to="/home" >Home</Link>
                         <Link className='navigation-link' to="/about">About</Link>
                         <Link className='navigation-link' to="/projects">Projects</Link>
