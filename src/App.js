@@ -10,9 +10,11 @@ class App extends Component {
   
   constructor(props) {
     super(props);
-    this.state = {addClass: false,
+    this.state = {
       blurOn: false,
       blurTime: 500,
+      activeItem: 0,
+      items: ['Home', 'About', 'Projects', 'Contact']
     }
   }
   
@@ -23,16 +25,13 @@ class App extends Component {
     }, this.state.blurTime);
   }
 
-  //switches state of addClass between true and false
-  toggleClass() {
-    this.setState({addClass: !this.state.addClass});
+  handleItemClick(index) {
+    this.setState({
+      activeItem: index,
+    })
   }
   
   render() {
-    let classToAdd = ["navigation-link"];
-    if (this.state.addClass) {
-      classToAdd.push("selected");
-    }
     return (
       <div className="demo-big-content">
         <div>
@@ -40,21 +39,21 @@ class App extends Component {
         <Blur radius={ this.state.blurOn ? '5px' : '0' } transition={`${this.state.blurTime}ms`}>
         <Layout>
             <Header className="header-color" title=" " scroll>
-                <Navigation className='header-navigation' 
-                    onClick={ (event) => {
-                      // this.toggleClass();
-                      this.blurOn();
-                      // classToAdd.join('-');
+                <Navigation className="header-navigation" 
+                    onClick={ () => {
+                        this.blurOn();
+                        }
                       }
-                    }
-                    >
-                        <Link className={`navigation-link ${classToAdd.join('-')}`} to="/home" onClick= {() => {
-                          this.toggleClass();
-                          classToAdd.join('-');
-                        }}>Home</Link>
-                        <Link className={`navigation-link ${classToAdd.join('-')}`} to="/home" to="/about">About</Link>
-                        <Link className={`navigation-link ${classToAdd.join('-')}`} to="/home" to="/projects">Projects</Link>
-                        <Link className={`navigation-link ${classToAdd.join('-')}`} to="/home" to="/contact">Contact</Link>
+                >
+                  { this.state.items.map((item, index) => 
+                    <Link 
+                      key={index}
+                      className={`navigation-link ${this.state.activeItem === index ? 'navigation-link-selected' : ''} `}
+                      to={`${item.toLowerCase()}`}
+                      onClick={this.handleItemClick.bind(this, index)}
+                    >{item}
+                    </Link>
+                  )}
                 </Navigation>
             </Header>
             <Content>
