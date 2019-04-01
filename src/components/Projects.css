@@ -10,6 +10,10 @@
     font-size: 150%;
   }
   
+  .category-tabs {
+    margin-top: 3%;
+  }
+  
   .is-active {
     color: rgba(46, 145, 238, 0.849) !important;
     border: 1px solid rgba(46, 145, 238, 0.849) !important;

@@ -29,3 +29,7 @@ body {
 .header-navigation {
   font-size: 150%;
 }
+
+::-webkit-scrollbar { 
+  display: none; 
+}
