@@ -26,8 +26,6 @@ body {
   color: rgba(46, 145, 238, 0.849);
 }
 
-.header-navbar {
-  font-family: 'Dancing Script', cursive;
-  left: 50%;
-  text-align: center;
+.header-navigation {
+  font-size: 150%;
 }
