@@ -4,7 +4,7 @@ import './App.css';
 import Main from './components/Main'
 import { Layout, Header, Navigation, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
-import Blur from 'react-css-blur'
+import Blur from 'react-css-blur';
 
 class App extends Component {
   
