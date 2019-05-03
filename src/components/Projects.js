@@ -102,7 +102,7 @@ class Projects extends Component {
                     ripple>
                             <Tab className="category-tab">Javascript</Tab>
                             <Tab className="category-tab">React</Tab>
-                            <Tab className="category-tab">Unity</Tab>
+                            {/* <Tab className="category-tab">Unity</Tab> */}
                     </Tabs>
                     <Grid>
                     <Blur radius={ this.state.blurOn ? '10px' : '0' } transition={`${this.state.transitionTime}ms`}>
