@@ -6,7 +6,7 @@ const Project = (props) => {
     return (
         <div className="project">
             <Card className="project-card" shadow={5}>
-                <CardTitle className="project-card-title"> {/*style={{background: `url(${props.image}) center/cover`}} */}
+                <CardTitle className="project-card-title"> 
                     {props.title}
                 </CardTitle>
                 <CardText>

@@ -5,7 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
 
-const Main = () => {
+const MainRouter = () => {
     return(
         <Switch >
             <Route exact path="/" component={Home} />
@@ -17,4 +17,4 @@ const Main = () => {
     )
 }
 
-export default Main;
+export default MainRouter;

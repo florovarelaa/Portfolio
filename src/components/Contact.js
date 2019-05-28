@@ -8,10 +8,6 @@ class Contact extends Component {
             <div className="contact-body">
                 <Grid className="contact-grid">
                     <Cell className="contact-grid-cell">
-                        <div className="contact-grid-title">
-                            <h2>CONTACT</h2>
-                        </div>
-                        <hr />
                         <div className="contact-list">
                             <List>
                                 <ListItem className="contact-list-item">

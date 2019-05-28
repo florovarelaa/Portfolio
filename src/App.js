@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import Main from './components/Main'
+import MainRouter from './components/MainRouter'
 import { Layout, Header, Navigation, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Blur from 'react-css-blur';
@@ -12,7 +12,8 @@ class App extends Component {
     super(props);
     this.state = {
       blurOn: false,
-      blurTime: 500,
+      blurRadius: 15, //px added on call
+      blurTime: 700,
       activeItem: 0,
       items: ['Home', 'About', 'Projects', 'Contact']
     }
@@ -33,15 +34,12 @@ class App extends Component {
   
   render() {
     return (
-      <div className="demo-big-content">
-        <div>
-        </div>
-        <Blur radius={ this.state.blurOn ? '5px' : '0' } transition={`${this.state.blurTime}ms`}>
+      <div className="content">
         <Layout>
             <Header className="header-color" title=" " scroll>
                 <Navigation className="header-navigation" 
                     onClick={ () => {
-                        this.blurOn();
+                      this.blurOn();
                         }
                       }
                 >
@@ -56,12 +54,13 @@ class App extends Component {
                   )}
                 </Navigation>
             </Header>
+            
+            <Blur radius={ this.state.blurOn ? `${this.state.blurRadius}px` : '0' } transition={`${this.state.blurTime}ms`}>
             <Content>
-                <div className="page-content" />
-                <Main className="main"/>
+                <MainRouter className="main"/>
             </Content>
+            </Blur>
         </Layout>
-        </Blur>
       </div>
     );
   }
