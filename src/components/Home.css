@@ -51,6 +51,10 @@
     font-family: 'Dancing Script', cursive;
   }
 
+  .cursive {
+    font-family: cursive;
+  }
+
   .social-links {
     display: flex;
     justify-content: space-between;

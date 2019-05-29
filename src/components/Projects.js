@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 import Project from './Project';
+import ProjectCard from './ProjectCard/ProjectCard';
 import './Projects.css';
 import Blur from 'react-css-blur';
 
@@ -49,6 +50,7 @@ class Projects extends Component {
         } else if(this.state.activeTab === 1) {
             return(
                 <div className="projects-grid">
+                    <ProjectCard />
                     <Project 
                         title={'RoboFriends'} 
                         description={'A React app for filtering Card Components'}
@@ -87,26 +89,31 @@ class Projects extends Component {
         }, this.state.blurTime);
     }
 
+    // componentDidMount to fetch from api
+
+
     render () {
         return(
-            <div className="category-tabs">
-                    <Tabs className="mdl-tabs__tab-bar" activeTab={this.state.activeTab} 
-                        onChange={
-                            (tabId) => {
-                                this.setState({ 
-                                    activeTab: tabId 
-                                        })
-                                this.blurOn();
+            <div className>
+                    <div className="category-tabs">
+                        <Tabs className="" activeTab={this.state.activeTab} 
+                            onChange={
+                                (tabId) => {
+                                    this.setState({ 
+                                        activeTab: tabId 
+                                            })
+                                    this.blurOn();
+                                    }
                                 }
-                            }
-                    ripple>
-                            <Tab className="category-tab">Javascript</Tab>
-                            <Tab className="category-tab">React</Tab>
-                            {/* <Tab className="category-tab">Unity</Tab> */}
-                    </Tabs>
+                        ripple>
+                                <Tab className="category-tab">Javascript</Tab>
+                                <Tab className="category-tab">React</Tab>
+                                {/* <Tab className="category-tab">Unity</Tab> */}
+                        </Tabs>
+                    </div>
                     <Grid>
                     <Blur radius={ this.state.blurOn ? '10px' : '0' } transition={`${this.state.transitionTime}ms`}>
-                        <Cell col={12}>
+                        <Cell className="cell-position" col={12}>
                             <div className='content'>
                                 {this.toggleCategories()}
                             </div>

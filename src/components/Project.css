@@ -1,10 +1,8 @@
 .project-card {
-    margin: 1em;
+    margin: 1.5em; /*So that cards can transform */
 }
 
 .project {
-    width: 30%;
-    padding: 1em;
     transition: .6s;
 }
 
