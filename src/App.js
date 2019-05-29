@@ -15,7 +15,7 @@ class App extends Component {
       blurRadius: 15, //px added on call
       blurTime: 700,
       activeItem: 0,
-      items: ['Home', 'About', 'Projects', 'Contact', 'Example', 'Example', 'Example', 'Example']
+      items: ['Home', 'About', 'Projects', 'Contact']
     }
   }
   
@@ -37,7 +37,7 @@ class App extends Component {
       <div className="content">
         <Layout>
           <Header className="header-color header-position" scroll>
-            <div className="header">
+            <div className="header-navigation-position">
                 <Navigation className="header-navigation" 
                     onClick={ () => {
                       this.blurOn();

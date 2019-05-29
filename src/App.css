@@ -7,11 +7,12 @@ body {
   overflow: hidden;
 }
 
-.header {
+.header-navigation-position {
   display: flex;
   position: absolute;
   text-align: center;
-  left: 33%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .header-color {
@@ -21,6 +22,7 @@ body {
 
 .header-position {
   position: relative;
+  padding-bottom: 3%;
 }
 
 .navigation-link {
