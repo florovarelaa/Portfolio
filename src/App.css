@@ -8,11 +8,19 @@ body {
 }
 
 .header {
-  position: fixed;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  left: 33%;
 }
 
 .header-color {
   background-color: rgba(0,0,0,0);
+  box-shadow: none;
+}
+
+.header-position {
+  position: relative;
 }
 
 .navigation-link {

@@ -15,7 +15,7 @@ class App extends Component {
       blurRadius: 15, //px added on call
       blurTime: 700,
       activeItem: 0,
-      items: ['Home', 'About', 'Projects', 'Contact']
+      items: ['Home', 'About', 'Projects', 'Contact', 'Example', 'Example', 'Example', 'Example']
     }
   }
   
@@ -36,7 +36,8 @@ class App extends Component {
     return (
       <div className="content">
         <Layout>
-            <Header className="header-color" title=" " scroll>
+          <Header className="header-color header-position" scroll>
+            <div className="header">
                 <Navigation className="header-navigation" 
                     onClick={ () => {
                       this.blurOn();
@@ -53,13 +54,13 @@ class App extends Component {
                     </Link>
                   )}
                 </Navigation>
-            </Header>
-            
-            <Blur radius={ this.state.blurOn ? `${this.state.blurRadius}px` : '0' } transition={`${this.state.blurTime}ms`}>
-            <Content>
-                <MainRouter className="main"/>
-            </Content>
-            </Blur>
+            </div>
+          </Header>
+          <Blur radius={ this.state.blurOn ? `${this.state.blurRadius}px` : '0' } transition={`${this.state.blurTime}ms`}>
+          <Content>
+              <MainRouter className="main"/>
+          </Content>
+          </Blur>
         </Layout>
       </div>
     );
