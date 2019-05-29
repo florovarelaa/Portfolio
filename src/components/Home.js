@@ -10,7 +10,7 @@ class Home extends Component {
                 <Grid className='landing-grid'>
                     <Cell col={12}>
                         <div className="banner-text">
-                            <h1><span className="banner-text-name">Florencio Varela </span>- Developer</h1>
+                            <h1><span className="font-dancing-script-cursive color-blue">Florencio Varela </span>- Developer</h1>
                             <div className="social-links"> 
                                 {/* Linkedin */}
                                 <a href="https://www.linkedin.com/in/florovarelaa/" target="_blank" rel="noopener noreferrer">

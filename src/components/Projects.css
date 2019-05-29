@@ -17,3 +17,7 @@
     color: rgba(46, 145, 238, 0.849) !important;
     border: 1px solid rgba(46, 145, 238, 0.849) !important;
   }
+
+  .mdl-tabs__tab-bar {
+    border-bottom: none;
+  }

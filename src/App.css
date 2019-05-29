@@ -23,6 +23,7 @@ body {
 .header-position {
   position: relative;
   padding-bottom: 3%;
+  /* min-height: 100px; */
 }
 
 .navigation-link {

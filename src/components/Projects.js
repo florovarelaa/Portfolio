@@ -90,7 +90,7 @@ class Projects extends Component {
     render () {
         return(
             <div className="category-tabs">
-                    <Tabs activeTab={this.state.activeTab} 
+                    <Tabs className="mdl-tabs__tab-bar" activeTab={this.state.activeTab} 
                         onChange={
                             (tabId) => {
                                 this.setState({ 
