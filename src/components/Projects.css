@@ -1,7 +1,7 @@
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .category-tab {
@@ -9,19 +9,21 @@
     color: white;
     font-size: 150%;
   }
+
+  .tabs-container {
+    position: relative;
+    margin-bottom: 2%;
+  }
   
   .category-tabs {
-    display: block;
-    position: absolute;
-    width: 25%;
-    transform: translate(-50%);
-    left: 50%;
+    position: relative;
+    width: 50%;
+    transform: translate(50%);
+    height: 100%;
     border-top: 1px solid rgba(150, 200, 247, 0.849);
-    padding-bottom: 5px;
-    margin-bottom: 1em;
   }
 
-  cell-position {
+  .cell-position {
     position: relative;
   }
   
