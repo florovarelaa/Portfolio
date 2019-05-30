@@ -18,34 +18,47 @@ class Projects extends Component {
     
     toggleCategories() {
         switch (this.state.activeTab) {
-            case 0:
+            case 0: //javascript
                 return(
                     <div className="projects-grid">
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                        <ProjectCard url='https://github.com/florovarelaa/JS-GasStations'
+                                     icon='javascript'
+                                     description='An application that shows the gas stations of a region in a map.'
+                        />
                     </div>
                 );
-            case 1:
+            case 1: //react
                 return(
                     <div className="projects-grid">
-                        <Project 
-                            title={'RoboFriends'} 
-                            description={'A React app for filtering Card Components'}
-                            github={'https://github.com/florovarelaa/RoboFriends'}
-                            />
+                        <ProjectCard url= 'https://github.com/florovarelaa/React-portfolio'
+                                     icon='react'
+                                     description='My own personal Portfolio'
+                        />
+                        <ProjectCard url='https://github.com/florovarelaa/React-RoboFriends'
+                                     icon='react'
+                                     description='App for filtering Card Components'
+                        />
                     </div>
                 );
-            case 2:
+            case 2: //unity
                 return(
                     <div className="projects-grid">
-                        <Project 
-                            title={'RoboFriends'} 
-                            description={'A React app for filtering Card Components'}
-                            github={'https://github.com/florovarelaa/RoboFriends'}
-                            />
+                        <ProjectCard url='https://github.com/florovarelaa/Unity-Hit-The-Targets'
+                                     icon='unity'
+                                     description='A top down shooting game'
+                        />
+                        <ProjectCard url='https://github.com/florovarelaa/Unity-UnfairPlatformer'
+                                     icon='unity'
+                                     description='A not simple nor fair platformer game'
+                        />
+                        <ProjectCard url='https://github.com/florovarelaa/Unity-Patrol-Animal-Zone'
+                                     icon='unity'
+                                     description='A small game with an abilty sistem'
+                        />
+                        <ProjectCard url='https://github.com/florovarelaa/Unity-Flappy-Bird'
+                                     icon='unity'
+                                     description='A flappy bird clone'
+                        />
                     </div>
                 );   
             default: break;   
