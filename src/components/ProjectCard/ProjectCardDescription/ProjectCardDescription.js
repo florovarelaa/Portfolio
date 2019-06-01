@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './ProjectCardDescription.css';
 
 class ProjectCardDescription extends Component {
     render () {
         return (
-            <span>
+            <div className="descrpition-bottom">
                 {this.props.children}
-            </span>
+            </div>
         );
     }
 }

@@ -1,0 +1,18 @@
+.title {
+    position: absolute;
+    width: 100%;
+    padding: 3%;
+}
+
+.title-bottom {
+    bottom: 0;
+}
+
+.title-center {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.title-top {
+    top: 0;
+}

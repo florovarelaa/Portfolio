@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import './ProjectCardIcon.css';
 
 class ProjectCardIcon extends Component {
-    render () {
-        switch (this.props.icon) {
-            case 'react': 
-                return (
-                    <i className="fab fa-react" aria-hidden="true" />
-                );
+
+    getIcon(icon) {
+        switch (icon) {
             case 'javascript':
                 return (
                     <i className="fab fa-js-square" aria-hidden="true" />
+                );
+            case 'react': 
+                return (
+                    <i className="fab fa-react" aria-hidden="true" />
                 );
             case 'unity':
                 return (
@@ -20,6 +22,14 @@ class ProjectCardIcon extends Component {
                     <i className="fab fa-javascript" aria-hidden="true" /> 
                 );
         }
+    }
+
+    render () {
+        return(
+            <div className="icon-center">
+                {this.getIcon(this.props.icon)}
+            </div>
+        )
     }
 }
 

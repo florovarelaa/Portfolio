@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid } from 'react-mdl';
-import Project from './Project';
+import { Tabs, Tab } from 'react-mdl';
+import { Link } from 'react-router-dom';
+import ProjectsRouter from './ProjectsRouter/ProjectsRouter'
 import ProjectCard from './ProjectCard/ProjectCard';
 import './Projects.css';
 import Blur from 'react-css-blur';
@@ -23,6 +24,7 @@ class Projects extends Component {
                     <div className="projects-grid">
                         <ProjectCard url='https://github.com/florovarelaa/JS-GasStations'
                                      icon='javascript'
+                                     title='Map Gas Stations'
                                      description='An application that shows the gas stations of a region in a map.'
                         />
                     </div>
@@ -94,10 +96,22 @@ class Projects extends Component {
                                                 this.blurOn();
                                         }
                                     }
-                            ripple>
-                                    <Tab className="category-tab">Javascript</Tab>
-                                    <Tab className="category-tab">React</Tab>
-                                    <Tab className="category-tab">Unity</Tab>
+                            ripple> 
+                            {/* <Link
+                                to={`/projects/javascript`}
+                            > */}
+                                <Tab className="category-tab">Javascript</Tab>
+                            {/* </Link>
+                            <Link
+                                to={`/projects/react`}
+                            > */}
+                                <Tab className="category-tab">React</Tab>
+                            {/* </Link>
+                            <Link
+                                to={`projects/unity`}
+                            > */}
+                                <Tab className="category-tab">Unity</Tab>
+                            {/* </Link> */}
                         </Tabs>
                     </div>
                     <Blur radius={ this.state.blurOn ? '10px' : '0' } transition={`${this.state.transitionTime}ms`}>
