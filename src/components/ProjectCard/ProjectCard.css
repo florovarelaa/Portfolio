@@ -7,6 +7,7 @@
     cursor: pointer;
     overflow: hidden; /* Makes the effect of the project-card */
     transition: transform 0.5s;
+    border-radius: 5%;
 }
 
 .project-card-medium {

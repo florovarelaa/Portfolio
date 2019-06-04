@@ -6,11 +6,11 @@
     height: 100%;
     font-size: 30px;
     text-align: center;
-    background: linear-gradient(to top, #ad5389, #3c1053);
+    background: linear-gradient(to bottom, #ad5389, #3c1053);
     z-index: 1;
     transition: transform 0.5s;
 }
 
 .slider:hover {
-    transform: translateY(-40%);
+    transform: translateY(-35%);
   }

@@ -12,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       blurOn: false,
-      blurRadius: 15, //px added on call
+      blurRadius: 15, //px added on function call
       blurTime: 700,
       activeItem: 0,
       items: ['Home', 'About', 'Projects', 'Contact']

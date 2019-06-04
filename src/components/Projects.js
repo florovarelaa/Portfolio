@@ -11,11 +11,10 @@ class Projects extends Component {
         super(props);
         this.state = { activeTab: 0,
                        blurOn: false,
-                       blurTime: 500,
+                       blurTime: 300,
                        transitionTime: 300,
         };
     }
-
     
     toggleCategories() {
         switch (this.state.activeTab) {
@@ -34,10 +33,12 @@ class Projects extends Component {
                     <div className="projects-grid">
                         <ProjectCard url= 'https://github.com/florovarelaa/React-portfolio'
                                      icon='react'
+                                     title='Portfolio'
                                      description='My own personal Portfolio'
                         />
                         <ProjectCard url='https://github.com/florovarelaa/React-RoboFriends'
                                      icon='react'
+                                     title='Robo Friends'
                                      description='App for filtering Card Components'
                         />
                     </div>
@@ -47,18 +48,22 @@ class Projects extends Component {
                     <div className="projects-grid">
                         <ProjectCard url='https://github.com/florovarelaa/Unity-Hit-The-Targets'
                                      icon='unity'
+                                     title='Hit the Targets'
                                      description='A top down shooting game'
                         />
                         <ProjectCard url='https://github.com/florovarelaa/Unity-UnfairPlatformer'
                                      icon='unity'
+                                     title='Unfair Platformer'
                                      description='A not simple nor fair platformer game'
                         />
                         <ProjectCard url='https://github.com/florovarelaa/Unity-Patrol-Animal-Zone'
                                      icon='unity'
+                                     title='Patrol Animal Zone'
                                      description='A small game with an abilty sistem'
                         />
                         <ProjectCard url='https://github.com/florovarelaa/Unity-Flappy-Bird'
                                      icon='unity'
+                                     title='Flappy Bird'
                                      description='A flappy bird clone'
                         />
                     </div>

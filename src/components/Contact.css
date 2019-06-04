@@ -50,6 +50,7 @@
     margin: 10px;
     position: relative;
     cursor: pointer;
+    border-radius: 5%;
   }
 
   .contact-list-item i {
