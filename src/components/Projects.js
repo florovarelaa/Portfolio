@@ -3,14 +3,14 @@ import { Tabs, Tab } from 'react-mdl';
 import ProjectCard from './ProjectCard/ProjectCard';
 import './Projects.css';
 import Blur from 'react-css-blur';
+import { connect } from 'react-redux';
+import { blurOn, blurOff } from '../actions/blurActions';
 
 class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = { activeTab: 0,
-                       blurOn: false,
-                       blurTime: 400,
-                       transitionTime: 350,
+                       blurTime: 550,
         };
     }
     
@@ -76,11 +76,11 @@ class Projects extends Component {
         })
     }
     
-    blurOn = () => {
-        this.setState({ blurOn: true });
+    blurEffect = (miliseconds) => {
+        this.props.onBlurOn()
         setTimeout(() => {
-            this.setState({ blurOn: false })
-        }, this.state.blurTime);
+          this.props.onBlurOff()
+        }, miliseconds);
     }
 
     // componentDidMount to fetch from api
@@ -95,10 +95,10 @@ class Projects extends Component {
                                     (tabId) => {
                                         this.setState({ 
                                             activeTab: tabId 
-                                                })
-                                                this.blurOn();
-                                        }
+                                        })
+                                        this.blurEffect(this.state.blurTime)
                                     }
+                                }
                             ripple> 
                             {/* <Link
                                 to={`/projects/javascript`}
@@ -117,7 +117,7 @@ class Projects extends Component {
                             {/* </Link> */}
                         </Tabs>
                     </div>
-                    <Blur radius={ this.state.blurOn ? '10px' : '0' } transition={`${this.state.transitionTime}ms`}>
+                    <Blur radius={ this.props.blur.active ? `${this.props.blur.blurRadius}px` : '0' } transition = {`${this.state.blurTime}ms`}>
                             {this.toggleCategories()}                               
                     </Blur>
             </div>
@@ -125,4 +125,13 @@ class Projects extends Component {
     }
 }
 
-export default Projects;
+const mapStateToProps = state => ({
+    blur: state.blur,
+});
+
+const mapActionsToProps = {
+    onBlurOn: blurOn,
+    onBlurOff: blurOff,
+};
+
+export default connect(mapStateToProps, mapActionsToProps)(Projects);

@@ -12,32 +12,19 @@ class App extends Component {
   
   constructor(props) {
     super(props);
-    this.onBlurOn = this.onBlurOn.bind(this);
-    this.onBlurOff = this.onBlurOff.bind(this);
-    // this.onActiveItem = this.onActiveItem.bind(this);
-    this.blurRadius = 15; //px added on function call
-    this.blurTime = 700;
     this.items = ['Home', 'About', 'Projects', 'Contact'];
   }
   
+  //handles the click of the navBar menu items.
   handleItemClick(index) {
     this.props.onActiveItem(index);
   }
 
   blurEffect = (miliseconds) => {
-    this.onBlurOn()
+    this.props.onBlurOn()
     setTimeout(() => {
-      this.onBlurOff()
+      this.props.onBlurOff()
     }, miliseconds);
-  }
-
-
-  onBlurOn() {
-    this.props.onBlurOn();
-  }
-  
-  onBlurOff() {
-    this.props.onBlurOff();
   }
   
   render() {
@@ -48,10 +35,11 @@ class App extends Component {
             <div className="header-navigation-position">
                 <Navigation className="header-navigation" 
                     onClick={ () => {
-                      this.blurEffect(this.blurTime);
+                      this.blurEffect(this.props.blur.blurTime);
                         }
                       }
                 >
+                  {/* maps the navBar items into the NavBar */}
                   { this.items.map((item, index) => 
                     <Link 
                       key={index}
@@ -64,7 +52,8 @@ class App extends Component {
                 </Navigation>
             </div>
           </Header>
-          <Blur radius={ this.props.blur ? `${this.blurRadius}px` : '0' } transition={`${this.blurTime}ms`}>
+          {/* Checks if the blur property is active in the state and acts accordingly */}
+          <Blur radius={ this.props.blur.active ? `${this.props.blur.blurRadius}px` : '0' } transition={`${this.props.blur.blurTime}ms`}>
           <Content>
               <MainRouter className="main"/>
           </Content>
@@ -78,7 +67,6 @@ class App extends Component {
 const mapStateToProps = state => ({
   blur: state.blur,
   activeItem: state.item,
-  floro: state.floro,
 });
 
 const mapActionsToProps = {

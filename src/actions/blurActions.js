@@ -5,7 +5,7 @@ export function blurOn() {
     return {
         type: BLUR_ON,
         payload: {
-            blur: true,
+            active: true,
         }
     }
 }
@@ -14,7 +14,7 @@ export function blurOff() {
     return {
         type: BLUR_ON,
         payload: {
-            blur: false,
+            active: false,
         }
     }
 }

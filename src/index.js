@@ -12,11 +12,6 @@ import blurReducer from './reducers/blurReducer';
 import itemReducer from './reducers/itemReducer';
 import { Provider } from 'react-redux';
 
-const initialState = {
-  blur: false,
-  item: 0,
-};
-
 const particlesOptions = {
     particles: {
       number: {
@@ -36,11 +31,11 @@ const allReducers = combineReducers({
 
 const store = createStore(
   allReducers,
-  initialState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
 ReactDOM.render(
+            //Provides the store of the rest of the app. The store contains the state.
             <Provider store={store}>
               <BrowserRouter>
               <div>
