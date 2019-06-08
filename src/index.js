@@ -9,10 +9,12 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import { combineReducers, createStore } from 'redux';
 import blurReducer from './reducers/blurReducer';
+import itemReducer from './reducers/itemReducer';
 import { Provider } from 'react-redux';
 
-const initialState =   {
+const initialState = {
   blur: false,
+  item: 0,
 };
 
 const particlesOptions = {
@@ -29,6 +31,7 @@ const particlesOptions = {
 
 const allReducers = combineReducers({
   blur: blurReducer,
+  item: itemReducer,
 })
 
 const store = createStore(

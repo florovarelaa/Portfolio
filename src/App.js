@@ -5,6 +5,7 @@ import { Layout, Header, Navigation, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Blur from 'react-css-blur';
 import { connect } from 'react-redux';
+import { actionActiveItem } from './actions/itemActions';
 import { blurOn, blurOff } from './actions/blurActions';
 
 class App extends Component {
@@ -13,18 +14,14 @@ class App extends Component {
     super(props);
     this.onBlurOn = this.onBlurOn.bind(this);
     this.onBlurOff = this.onBlurOff.bind(this);
-    this.state = {
-      blurRadius: 15, //px added on function call
-      blurTime: 700,
-      items: ['Home', 'About', 'Projects', 'Contact'],
-      activeItem: 0,
-    }
+    // this.onActiveItem = this.onActiveItem.bind(this);
+    this.blurRadius = 15; //px added on function call
+    this.blurTime = 700;
+    this.items = ['Home', 'About', 'Projects', 'Contact'];
   }
   
   handleItemClick(index) {
-    this.setState({
-      activeItem: index,
-    })
+    this.props.onActiveItem(index);
   }
 
   blurEffect = (miliseconds) => {
@@ -51,14 +48,14 @@ class App extends Component {
             <div className="header-navigation-position">
                 <Navigation className="header-navigation" 
                     onClick={ () => {
-                      this.blurEffect(this.state.blurTime);
+                      this.blurEffect(this.blurTime);
                         }
                       }
                 >
-                  { this.state.items.map((item, index) => 
+                  { this.items.map((item, index) => 
                     <Link 
                       key={index}
-                      className={`navigation-link ${this.state.activeItem === index ? 'navigation-link-selected' : ''}`}
+                      className={`navigation-link ${this.props.activeItem === index ? 'navigation-link-selected' : ''}`}
                       to={`${item.toLowerCase()}`}
                       onClick={this.handleItemClick.bind(this, index)}
                   >{item}
@@ -67,7 +64,7 @@ class App extends Component {
                 </Navigation>
             </div>
           </Header>
-          <Blur radius={ this.props.blur ? `${this.state.blurRadius}px` : '0' } transition={`${this.state.blurTime}ms`}>
+          <Blur radius={ this.props.blur ? `${this.blurRadius}px` : '0' } transition={`${this.blurTime}ms`}>
           <Content>
               <MainRouter className="main"/>
           </Content>
@@ -80,11 +77,14 @@ class App extends Component {
 
 const mapStateToProps = state => ({
   blur: state.blur,
+  activeItem: state.item,
+  floro: state.floro,
 });
 
 const mapActionsToProps = {
   onBlurOn: blurOn,
   onBlurOff: blurOff,
+  onActiveItem: actionActiveItem,
 }
 
 export default connect(mapStateToProps, mapActionsToProps)(App);

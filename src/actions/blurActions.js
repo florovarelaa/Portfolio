@@ -1,5 +1,5 @@
-export const BLUR_ON = 'blur:blurOn';
-export const BLUR_OFF = 'blur:blurOff'
+export const BLUR_ON = 'BLUR_ON';
+export const BLUR_OFF = 'BLUR_OFF';
 
 export function blurOn() {
     return {
