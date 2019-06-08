@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Tabs, Tab } from 'react-mdl';
-import { Link } from 'react-router-dom';
-import ProjectsRouter from './ProjectsRouter/ProjectsRouter'
 import ProjectCard from './ProjectCard/ProjectCard';
 import './Projects.css';
 import Blur from 'react-css-blur';
@@ -11,8 +9,8 @@ class Projects extends Component {
         super(props);
         this.state = { activeTab: 0,
                        blurOn: false,
-                       blurTime: 300,
-                       transitionTime: 300,
+                       blurTime: 400,
+                       transitionTime: 350,
         };
     }
     

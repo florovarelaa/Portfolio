@@ -7,6 +7,13 @@ import App from './App';
 import Particles from 'react-particles-js';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import { combineReducers, createStore } from 'redux';
+import blurReducer from './reducers/blurReducer';
+import { Provider } from 'react-redux';
+
+const initialState =   {
+  blur: false,
+};
 
 const particlesOptions = {
     particles: {
@@ -18,15 +25,27 @@ const particlesOptions = {
         },
       }
     }
-  }
+};
+
+const allReducers = combineReducers({
+  blur: blurReducer,
+})
+
+const store = createStore(
+  allReducers,
+  initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 
 ReactDOM.render(
-            <BrowserRouter>
-            <div>
-                <Particles className="particles" params={particlesOptions} />
-                <App />
-            </div>
-            </BrowserRouter>
+            <Provider store={store}>
+              <BrowserRouter>
+              <div>
+                  <Particles className="particles" params={particlesOptions} />
+                  <App />
+              </div>
+              </BrowserRouter>
+            </Provider>
             , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

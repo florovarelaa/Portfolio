@@ -8,8 +8,10 @@
     "react-dom": "^16.8.2",
     "react-mdl": "^1.11.0",
     "react-particles-js": "^2.4.2",
+    "react-redux": "^7.0.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
+    "redux": "^4.0.1",
     "surge": "^0.20.4"
   },
   "scripts": {
