@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import MainRouter from './components/MainRouter'
-import { Layout, Header, Navigation, Content } from 'react-mdl';
+import Navbar from './components/Navbar/Navbar.js'
+import { Layout, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Blur from 'react-css-blur';
 import { connect } from 'react-redux';
@@ -17,6 +18,7 @@ class App extends Component {
   
   //handles the click of the navBar menu items.
   handleItemClick(index) {
+    this.blurEffect(this.props.blur.blurTime)
     this.props.onActiveItem(index);
   }
 
@@ -29,35 +31,26 @@ class App extends Component {
   
   render() {
     return (
-      <div className="content">
         <Layout>
-          <Header className="header-color header-position font150 header" >
-                <Navigation className="header-navigation-position container" 
-                    onClick={ () => {
-                      this.blurEffect(this.props.blur.blurTime);
-                        }
-                      }
-                >
+            <Navbar>
                   {/* maps the navBar items into the NavBar */}
-                  { this.items.map((item, index) => 
+                    {this.items.map((item, index) => 
                     <Link 
                       key={index}
-                      className={`navigation-link ${this.props.activeItem === index ? 'active' : ''}`}
+                      className={`${this.props.activeItem === index ? 'active' : ''}`}
                       to={`${item.toLowerCase()}`}
                       onClick={this.handleItemClick.bind(this, index)}
                   >{item}
                     </Link>
-                  )}
-                </Navigation>
-          </Header>
+                  )} 
+          </Navbar>
           {/* Checks if the blur property is active in the state and acts accordingly */}
           <Blur radius={ this.props.blur.active ? `${this.props.blur.blurRadius}px` : '0' } transition={`${this.props.blur.blurTime}ms`}>
-          <Content>
+          <Content className="content">
               <MainRouter className="main"/>
           </Content>
           </Blur>
         </Layout>
-      </div>
     );
   }
 }

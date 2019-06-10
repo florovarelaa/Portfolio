@@ -7,42 +7,8 @@ body {
   overflow: hidden;
 }
 
-.header-navigation-position {
-  display: flex;
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.header-color {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.header-position {
-  position: relative;
-  padding-bottom: 3%;
-  /* overflow: hidden; */
-}
-
-.navigation-link {
-  font-family: 'Dancing Script', cursive;
-  font-size: 150%;
-}
-
-.active {
-  color: rgba(46, 145, 238, 0.849) !important;
-  font-family: 'Dancing Script', cursive;
-  font-size: 150%;
-}
-
-.navigation-link:hover {
-  color: rgba(46, 145, 238, 0.849);
-}
-
-.font150 {
-  font-size: 150%;
+.content {
+  margin-top: 80px;
 }
 
 ::-webkit-scrollbar { 
