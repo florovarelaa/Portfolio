@@ -16,14 +16,14 @@ body {
 }
 
 .header-color {
-  background-color: rgba(0,0,0,0);
+  background-color: transparent;
   box-shadow: none;
 }
 
 .header-position {
   position: relative;
   padding-bottom: 3%;
-  /* min-height: 100px; */
+  /* overflow: hidden; */
 }
 
 .navigation-link {
@@ -31,7 +31,7 @@ body {
   font-size: 150%;
 }
 
-.navigation-link-selected {
+.active {
   color: rgba(46, 145, 238, 0.849) !important;
   font-family: 'Dancing Script', cursive;
   font-size: 150%;
@@ -41,7 +41,7 @@ body {
   color: rgba(46, 145, 238, 0.849);
 }
 
-.header-navigation {
+.font150 {
   font-size: 150%;
 }
 

@@ -3,7 +3,7 @@ import { BLUR_ON, BLUR_OFF } from '../actions/blurActions';
 export default function blurReducer(state = { 
                                         active: false,
                                         blurRadius: 15,
-                                        blurTime: 700,
+                                        blurTime: 500,
                                     }, 
                                     { type, payload }){
     switch (type) {

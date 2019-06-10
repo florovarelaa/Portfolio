@@ -31,9 +31,8 @@ class App extends Component {
     return (
       <div className="content">
         <Layout>
-          <Header className="header-color header-position" scroll>
-            <div className="header-navigation-position">
-                <Navigation className="header-navigation" 
+          <Header className="header-color header-position font150 header" >
+                <Navigation className="header-navigation-position container" 
                     onClick={ () => {
                       this.blurEffect(this.props.blur.blurTime);
                         }
@@ -43,14 +42,13 @@ class App extends Component {
                   { this.items.map((item, index) => 
                     <Link 
                       key={index}
-                      className={`navigation-link ${this.props.activeItem === index ? 'navigation-link-selected' : ''}`}
+                      className={`navigation-link ${this.props.activeItem === index ? 'active' : ''}`}
                       to={`${item.toLowerCase()}`}
                       onClick={this.handleItemClick.bind(this, index)}
                   >{item}
                     </Link>
                   )}
                 </Navigation>
-            </div>
           </Header>
           {/* Checks if the blur property is active in the state and acts accordingly */}
           <Blur radius={ this.props.blur.active ? `${this.props.blur.blurRadius}px` : '0' } transition={`${this.props.blur.blurTime}ms`}>

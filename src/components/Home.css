@@ -30,7 +30,6 @@
   
   .banner-text h1 {
     font-size: 50px;
-    font-weight: bold;
     color: white;
     margin-top: 0;
   }
@@ -51,6 +50,14 @@
     font-family: 'Dancing Script', cursive;
   }
 
+  .font-letter-spacing-2 {
+    letter-spacing: 2px;
+  }
+
+  .font-line-heigh-2 {
+    line-height: 2em;
+  }
+
   .cursive {
     font-family: cursive;
   }
@@ -59,13 +66,15 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
-    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .social-links i {
     color: white;
     font-size: 3em;
-    padding: 0px;
+    padding: 10%;
     transition: .2s;
   } 
 

@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './Banner.css';
 
-class Banner extends Component {
-    render () {
-        return(
-            <div className="banner">
-            </div>
-        );
-    }
+const Banner = (props) => {
+    return(
+        <div className="banner w60 wCenter">
+            {props.children}
+        </div>
+    );
 }
 
 export default Banner;
