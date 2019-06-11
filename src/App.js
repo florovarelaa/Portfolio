@@ -47,7 +47,7 @@ class App extends Component {
           {/* Checks if the blur property is active in the state and acts accordingly */}
           <Blur radius={ this.props.blur.active ? `${this.props.blur.blurRadius}px` : '0' } transition={`${this.props.blur.blurTime}ms`}>
           <Content className="content">
-              <MainRouter className="main"/>
+              <MainRouter/>
           </Content>
           </Blur>
         </Layout>

@@ -43,14 +43,15 @@
 
   .contact-list-item {
     font-family: "Libre Baskerville", serif; 
-    width: 220px;
-    height: 140px;
+    width: 20vw;
+    height: 22vh;
     display: inline-block;
     background: linear-gradient(#3c1053, #ad5389);
     margin: 10px;
     position: relative;
     cursor: pointer;
     border-radius: 5%;
+    padding-top: 0.5%;
   }
 
   .contact-list-item i {
@@ -76,5 +77,7 @@
   }
 
   .contact-list-item span {
+    top: 0;
+    left: 0;
     width: 100%;
   }
