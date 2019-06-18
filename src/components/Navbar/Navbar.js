@@ -4,9 +4,6 @@ import './Navbar.css';
 const Navbar = props => (
     <header className='toolbar'>
         <nav className="toolbar-navigation">
-            <div>
-
-            </div>
             <div className="toolbar-navigation-items">
                 <ul>
                     {props.children}

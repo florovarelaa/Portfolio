@@ -7,9 +7,9 @@ import UnityProjects from '../Projects/UnityProjects/UnityProjects';
 const ProjectsRouter = () => {
     return(
         <Switch >
-            <Route exact path="./react" component={ReactProjects} />
-            <Route path="./javascript" component={JavascriptProjects} />
-            <Route path="./unity" component={UnityProjects} />
+            <Route exact path="/react" component={ReactProjects} />
+            <Route path="/javascript" component={JavascriptProjects} />
+            <Route path="/unity" component={UnityProjects} />
         </Switch>
     )
 }

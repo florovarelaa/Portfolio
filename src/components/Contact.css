@@ -44,7 +44,7 @@
   .contact-list-item {
     font-family: "Libre Baskerville", serif; 
     width: 20vw;
-    height: 22vh;
+    height: 10vw;
     display: inline-block;
     background: linear-gradient(#3c1053, #ad5389);
     margin: 10px;
@@ -53,7 +53,7 @@
     border-radius: 5%;
     padding-top: 0.5%;
   }
-
+  
   .contact-list-item i {
     position: absolute;
     left: 0;
