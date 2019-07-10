@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjectCardIcon from './ProjectCardIcon/ProjectCardIcon';
+import CardIcon from './CardIcon/CardIcon';
 import ProjectCardSlider from './ProjectCardSlider/ProjectCardSlider';
 import ProjectCardDescription from './ProjectCardDescription/ProjectCardDescription';
 import ProjectCardTitle from './ProjectCardTitle/ProjectCardTitle';
@@ -11,7 +11,7 @@ class ProjectCard extends Component {
             <div className="project-card project-card-medium">
                 <a href={this.props.url} target="_blank" rel="noopener noreferrer">
                     <ProjectCardSlider>
-                        <ProjectCardIcon icon={this.props.icon}/> 
+                        <CardIcon icon={this.props.icon}/> 
                         <ProjectCardTitle  className="title title-bottom title-center">
                             {this.props.title}
                         </ProjectCardTitle>

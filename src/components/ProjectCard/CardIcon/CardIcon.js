@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './ProjectCardIcon.css';
+import './CardIcon.css';
 
-class ProjectCardIcon extends Component {
+class CardIcon extends Component {
 
     getIcon(icon) {
         switch (icon) {
@@ -16,6 +16,22 @@ class ProjectCardIcon extends Component {
             case 'unity':
                 return (
                     <i className="fas fa-cube" aria-hidden="true" />
+                );
+            case 'linkedin':
+                return (
+                    <i className="fa fa-linkedin-square" aria-hidden="true" />
+                );
+            case 'github':
+                return (
+                    <i className="fa fa-github-square" aria-hidden="true" />
+                );
+            case 'facebook':
+                return (
+                    <i className="fa fa-facebook-square" aria-hidden="true" />
+                );
+            case 'instagram':
+                return (
+                    <i className="fa fa-instagram" aria-hidden="true" />
                 );
             default:
                 return (
@@ -33,8 +49,8 @@ class ProjectCardIcon extends Component {
     }
 }
 
-ProjectCardIcon.defaultProps = {
+CardIcon.defaultProps = {
     icon: 'javascript',
 }
 
-export default ProjectCardIcon;
+export default CardIcon;

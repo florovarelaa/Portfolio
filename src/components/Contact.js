@@ -1,47 +1,31 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
+import AboutCard from './AboutCard/AboutCard';
 import './Contact.css';
 
 class Contact extends Component {
     render () {
         return(
-            <div className="contact-body">
-                <Grid className="contact-grid">
-                    <Cell className="contact-grid-cell">
-                        <div className="contact-list">
-                            <List>
-                                <ListItem className="contact-list-item">
-                                    <ListItemContent>
-                                    <a href="https://www.linkedin.com/in/florovarelaa/" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-linkedin-square" aria-hidden="true" /> <span>/florovarelaa</span>
-                                    </a>
-                                    </ListItemContent>
-                                </ListItem>
-                                <ListItem className="contact-list-item">
-                                    <ListItemContent>
-                                    <a href="https://github.com/florovarelaa" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-github-square" aria-hidden="true" /> <span>/florovarelaa</span>
-                                    </a>
-                                    </ListItemContent>
-                                </ListItem>
-                                <ListItem className="contact-list-item">
-                                    <ListItemContent>
-                                    <a href="https://www.facebook.com/florovarelaa" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-facebook-square" aria-hidden="true" /> <span>/florovarelaa</span>
-                                    </a>    
-                                    </ListItemContent>
-                                </ListItem>
-                                <ListItem className="contact-list-item">
-                                    <ListItemContent>
-                                    <a href="https://www.instagram.com/florovarelaa" target="_blank" rel="noopener noreferrer">
-                                        <i className="fa fa-instagram" aria-hidden="true" /> <span>/florovarelaa</span>
-                                    </a>    
-                                    </ListItemContent>
-                                </ListItem>
-                            </List>
-                        </div>
-                    </Cell> 
-                </Grid>
+            <div className="grid">
+                <AboutCard 
+                    icon="linkedin" 
+                    url="https://www.linkedin.com/in/florovarelaa/"
+                    description="/florovarelaa"
+                />
+                <AboutCard 
+                    icon="github" 
+                    url="https://github.com/florovarelaa"
+                    description="/florovarelaa"
+                />
+                <AboutCard 
+                    icon="facebook" 
+                    description="/florovarelaa"
+                    url="https://www.facebook.com/florovarelaa"
+                />
+                <AboutCard 
+                    icon="instagram" 
+                    url="https://www.instagram.com/florovarelaa"
+                    description="/florovarelaa"
+                />
             </div>
         )
     }

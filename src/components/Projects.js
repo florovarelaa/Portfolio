@@ -18,7 +18,7 @@ class Projects extends Component {
         switch (this.state.activeTab) {
             case 0: //javascript
                 return(
-                    <div className="projects-grid">
+                    <div className="grid">
                         <ProjectCard url='https://github.com/florovarelaa/JS-GasStations'
                                      icon='javascript'
                                      title='Map Gas Stations'
@@ -28,7 +28,7 @@ class Projects extends Component {
                 );
             case 1: //react
                 return(
-                    <div className="projects-grid">
+                    <div className="grid">
                         <ProjectCard url= 'https://github.com/florovarelaa/React-portfolio'
                                      icon='react'
                                      title='Portfolio'
@@ -43,7 +43,7 @@ class Projects extends Component {
                 );
             case 2: //unity
                 return(
-                    <div className="projects-grid">
+                    <div className="grid">
                         <ProjectCard url='https://github.com/florovarelaa/Unity-Hit-The-Targets'
                                      icon='unity'
                                      title='Hit the Targets'

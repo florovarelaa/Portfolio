@@ -3,7 +3,7 @@ import ProjectCard from '../../ProjectCard/ProjectCard';
 
 const ReactProjects = () => {
     return(
-        <div className="projects-grid">
+        <div className="grid">
             <ProjectCard url= 'https://github.com/florovarelaa/React-portfolio'
                             icon='react'
                             description='My own personal Portfolio'
