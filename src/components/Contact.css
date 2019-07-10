@@ -46,7 +46,7 @@
     width: 20vw;
     height: 10vw;
     display: inline-block;
-    background: linear-gradient(#3c1053, #ad5389);
+    background: linear-gradient(#231f20, #333333);
     margin: 10px;
     position: relative;
     cursor: pointer;
@@ -63,13 +63,13 @@
     font-size: 4vw;
     line-height: 200%;
     text-align: center;
-    background: linear-gradient(#ad5389, #3c1053);
+    background: linear-gradient(#333333, #231f20);
     z-index: 1;
     transition: transform 0.5s;
   }
 
   .contact-list-item:hover {
-    border-bottom: 2px solid rgba(47, 145, 238, 0.847);
+    border-bottom: 2px solid #a420be;
   }
 
   .contact-list-item:hover i{

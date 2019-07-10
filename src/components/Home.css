@@ -83,11 +83,11 @@
   }
 
   .social-links i:hover {
-    color: rgba(46, 145, 238, 0.849);
+    color: #a420be;
   }
   
   .color-blue {
-    color: rgba(46, 145, 238, 0.849);
+    color:  #a420be;
   }
 
   @media only screen and (max-width: 768px) {

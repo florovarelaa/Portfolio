@@ -40,11 +40,11 @@
 }
 
 .toolbar-navigation-items a:hover {
-    color: rgba(150, 200, 247, 0.849);
+    color: #a420be;
 }
 
 .active {
-    color: rgba(46, 145, 238, 0.849) !important;
+    color:  #a420be !important;
 }
 
 @media only screen and (max-width: 768px) {

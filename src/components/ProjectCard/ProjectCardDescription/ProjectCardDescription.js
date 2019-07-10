@@ -4,7 +4,7 @@ import './ProjectCardDescription.css';
 class ProjectCardDescription extends Component {
     render () {
         return (
-            <div className="descrpition-bottom">
+            <div className="descripition-bottom">
                 {this.props.children}
             </div>
         );
