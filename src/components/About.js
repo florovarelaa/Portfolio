@@ -9,7 +9,7 @@ class About extends Component {
             <Banner>
                     <p className="about-banner-text">Hello, my name is <span className="about-name">Florencio Varela</span>.</p>
                     <p className="about-banner-text">I'm an <span>Informatic Engineering</span> student and <span> Developer</span> from Argentina.</p>
-                    <p className="about-banner-text">I'm quietly confident, naturally curious, and perpetually improving my chops. I design and code beautifully simple things, and I <span>love what I do</span>.</p>
+                    <p className="about-banner-text">I'm quietly confident, naturally curious, and perpetually improving my skills. I design and code beautiful simple things, and I <span>love what I do</span>.</p>
                     <p className="about-banner-text">I started my career as a QA tester.
                     This brought me the possibility to develop different <span>skills</span> such as:</p>
                     <ul className="about-banner-text">

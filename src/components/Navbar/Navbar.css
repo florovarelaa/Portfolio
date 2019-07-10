@@ -34,7 +34,7 @@
 .toolbar-navigation-items a {
     color: white;
     font-family: 'Dancing Script', cursive;
-    font-size: 220%;
+    font-size: 3vw;
     text-decoration: none;
     padding: 0 1rem;
 }
@@ -45,4 +45,17 @@
 
 .active {
     color: rgba(46, 145, 238, 0.849) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .toolbar-navigation-items a {
+        font-size: 4.5vw;
+    }
+} 
+
+@media only screen and (max-width: 420px) {
+    .toolbar-navigation-items a {
+        padding: 0 0.75rem;
+        font-size: 6vw;
+    }
 }

@@ -60,8 +60,8 @@
     top: 0;
     width: 100%;
     height: 100%;
-    font-size: 40px;
-    line-height: 140px;
+    font-size: 4vw;
+    line-height: 200%;
     text-align: center;
     background: linear-gradient(#ad5389, #3c1053);
     z-index: 1;
@@ -73,11 +73,12 @@
   }
 
   .contact-list-item:hover i{
-    transform: translateY(30%);
+    transform: translateY(35%);
   }
 
   .contact-list-item span {
     top: 0;
     left: 0;
     width: 100%;
+    font-size: 1.5vw;
   }

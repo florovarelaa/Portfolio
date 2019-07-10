@@ -90,7 +90,7 @@ class Projects extends Component {
         return(
             <div>
                     <div className="tabs-container">
-                        <Tabs className="category-tabs" activeTab={this.state.activeTab} 
+                        <Tabs className="project-tabs" activeTab={this.state.activeTab} 
                                 onChange={
                                     (tabId) => {
                                         this.setState({ 

@@ -15,7 +15,7 @@
     margin-bottom: 2%;
   }
   
-  .category-tabs {
+  .project-tabs {
     position: relative;
     width: 50%;
     transform: translate(50%);
@@ -38,4 +38,22 @@
 
   .mdl-tabs__tab-bar {
     border-bottom: none;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .category-tab {
+      font-size: 2.25vw;
+    }
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .category-tab {
+      font-size: 3vw;
+    }
+    
+    .mdl-tabs__tab {
+      cursor: pointer;
+      padding: 0;
+      width: 100%;
+    }
   }

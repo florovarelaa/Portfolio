@@ -6,7 +6,7 @@
 }
 
 .about-banner-text span {
-    font-size: 160%;
+    font-size: 30px;
     color: rgba(46, 145, 238, 0.849);
 }
 
@@ -27,5 +27,34 @@ li {
 
 .about-name {
     font-family: 'Dancing Script', cursive;
-    font-size: 200% !important;
+    font-size: 40px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-banner-text {
+        font-size: 15px;
+
+    }
+
+    .about-banner-text span {
+        font-size: 22.5px;
+    }
+
+    .about-name {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .about-banner-text {
+        font-size: 12px;
+    }
+
+    .about-banner-text span {
+        font-size: 18px;
+    }
+    
+    .about-name {
+        font-size: 24px !important;
+    }
 }
