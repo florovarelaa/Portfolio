@@ -31,7 +31,7 @@
   
   .banner-text h1 {
     font-size: 50px;
-    color: white;
+    color: #f0f0f0;
     margin-top: 0;
   }
   
@@ -42,7 +42,7 @@
   }
   
   .banner-text p {
-    color: white;
+    color: #f0f0f0;
     font-size: 20px;
     padding: 1em;
   }
@@ -73,7 +73,7 @@
   }
 
   .social-links i {
-    color: white;
+    color: #f0f0f0;
     font-size: 3em;
     transition: .2s;
   } 

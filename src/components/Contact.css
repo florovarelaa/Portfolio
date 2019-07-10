@@ -11,7 +11,7 @@
     text-align: center;
     justify-content: center;
     width: 80%;
-    color: white;
+    color: #f0f0f0;
     margin-bottom: 20px;
   }
 
@@ -22,7 +22,7 @@
 
   .contact-list {
     position: absolute;
-    color: white;
+    color: #f0f0f0;
     transform: translateY(-50%);
     text-align: center;
     left: 0;
@@ -34,7 +34,7 @@
     font-family: 'Dancing Script';
     font-size: 130%;
     text-align: justify;
-    color: white;
+    color: #f0f0f0;
     padding: 8px;
     text-decoration: none;
     margin: 0px;

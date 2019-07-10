@@ -1,5 +1,5 @@
 .about-banner-text {
-    color: white !important;
+    color: #f0f0f0 !important;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 2em;
@@ -12,7 +12,7 @@
 
 .about-banner-text p{
     margin: 0px;
-    color: white;
+    color: #f0f0f0;
     font-size: 20px;
     padding: 1em;
 }
