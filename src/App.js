@@ -38,9 +38,10 @@ class App extends Component {
                     <Link 
                       key={index}
                       className={`${this.props.activeItem === index ? 'active' : ''}`}
-                      to={`${item.toLowerCase()}`}
+                      to={`/${item.toLowerCase()}`}
                       onClick={this.handleItemClick.bind(this, index)}
-                  >{item}
+                    >
+                      {item}
                     </Link>
                   )} 
           </Navbar>
