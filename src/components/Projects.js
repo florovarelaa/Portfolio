@@ -16,49 +16,54 @@ class Projects extends Component {
     
     toggleCategories() {
         switch (this.state.activeTab) {
-            case 0: //javascript
+            case 0: //react
+                return(
+                        <div className="grid">
+                            <ProjectCard repository= 'https://github.com/florovarelaa/React-portfolio'
+                                        icon='react'
+                                        title='Portfolio'
+                                        description='My own personal Portfolio'
+                                        url= 'https://florovarelaa.surge.sh'
+                            />
+                            <ProjectCard repository= 'https://github.com/florovarelaa/React-Css-Filters'
+                                        icon='react'
+                                        title='CSS Filters'
+                                        description='A React app for applying css filters to an image.'
+                                        url= 'http://cssfilters.surge.sh/'
+                            />
+                            <ProjectCard repository='https://github.com/florovarelaa/React-RoboFriends'
+                                        icon='react'
+                                        title='Robo Friends'
+                                        description='App for filtering Card Components'
+                                        url= 'http://tremendous-cakes.surge.sh/'
+                            />
+                        </div>
+                    );
+            case 1: //javascript
                 return(
                     <div className="grid">
-                        <ProjectCard repository='https://github.com/florovarelaa/JS-GasStations'
-                                     icon='javascript'
-                                     title='Map Gas Stations'
-                                     description='An application that shows the gas stations of a region in a map.'
-                                     url='https://florovarelaa.github.io/JS-GasStations/'
-                        />
                         <ProjectCard repository='https://github.com/florovarelaa/JS-costos-calculator'
-                                     icon='javascript'
-                                     title='Money Division'
-                                     description='A javascript application to divide money between different people.'
-                                     url='http://costscalculator.surge.sh/'
+                                    icon='javascript'
+                                    title='Money Division'
+                                    description='A javascript application to divide money between different people.'
+                                    url='http://costscalculator.surge.sh/'
                         />
-                    </div>
-                );
-            case 1: //react
-                return(
-                    <div className="grid">
-                        <ProjectCard repository= 'https://github.com/florovarelaa/React-portfolio'
-                                     icon='react'
-                                     title='Portfolio'
-                                     description='My own personal Portfolio'
-                                     url= 'http://flawless-ocean.surge.sh/'
-                        />
-                        <ProjectCard repository= 'https://github.com/florovarelaa/React-Css-Filters'
-                                     icon='react'
-                                     title='CSS Filters'
-                                     description='A React app for applying css filters to an image.'
-                                     url= 'http://cssfilters.surge.sh/'
-                        />
-                        <ProjectCard repository='https://github.com/florovarelaa/React-RoboFriends'
-                                     icon='react'
-                                     title='Robo Friends'
-                                     description='App for filtering Card Components'
-                                     url= 'http://tremendous-cakes.surge.sh/'
+                        <ProjectCard repository='https://github.com/florovarelaa/JS-GasStations'
+                                    icon='javascript'
+                                    title='Map Gas Stations'
+                                    description='An application that shows the gas stations of a region in a map.'
+                                    url='https://florovarelaa.github.io/JS-GasStations/'
                         />
                     </div>
                 );
             case 2: //unity
                 return(
                     <div className="grid">
+                        <ProjectCard repository='https://github.com/florovarelaa/Unity-Flappy-Bird'
+                                     icon='unity'
+                                     title='Flappy Bird'
+                                     description='A flappy bird clone'
+                        />
                         <ProjectCard repository='https://github.com/florovarelaa/Unity-Hit-The-Targets'
                                      icon='unity'
                                      title='Hit the Targets'
@@ -73,11 +78,6 @@ class Projects extends Component {
                                      icon='unity'
                                      title='Patrol Animal Zone'
                                      description='A small game with an abilty sistem'
-                        />
-                        <ProjectCard repository='https://github.com/florovarelaa/Unity-Flappy-Bird'
-                                     icon='unity'
-                                     title='Flappy Bird'
-                                     description='A flappy bird clone'
                         />
                     </div>
                 );   
@@ -118,12 +118,12 @@ class Projects extends Component {
                             {/* <Link
                                 to={`/projects/javascript`}
                             > */}
-                                <Tab className="category-tab">Javascript</Tab>
+                                <Tab className="category-tab">React</Tab>
                             {/* </Link>
                             <Link
                                 to={`/projects/react`}
                             > */}
-                                <Tab className="category-tab">React</Tab>
+                                <Tab className="category-tab">Javascript</Tab>
                             {/* </Link>
                             <Link
                                 to={`projects/unity`}
