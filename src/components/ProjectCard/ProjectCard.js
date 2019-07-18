@@ -9,9 +9,16 @@ class ProjectCard extends Component {
     render() {
         return(
             <div className="project-card project-card-medium">
-                <a href={this.props.repository} target="_blank" rel="noopener noreferrer">
                     <ProjectCardSlider>
-                        <CardIcon icon={this.props.icon}/> 
+                        <div className="project-card-icons">
+                            <a className="project-card-icon" href={this.props.url} target="_blank" rel="noopener noreferrer">
+                                <i className="fas fa-external-link-alt"></i>
+                            </a>
+                            <CardIcon className="project-card-icon" icon={this.props.icon}/> 
+                            <a className="project-card-icon" href={this.props.repository} target="_blank" rel="noopener noreferrer">
+                                <i className="fa fa-github-square" aria-hidden="true" />
+                            </a>
+                        </div>
                         <ProjectCardTitle  className="title title-bottom title-center">
                             {this.props.title}
                         </ProjectCardTitle>
@@ -19,7 +26,6 @@ class ProjectCard extends Component {
                     <ProjectCardDescription>
                         {this.props.description}
                     </ProjectCardDescription>
-                </a>
             </div>
         );
     };      
