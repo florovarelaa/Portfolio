@@ -19,47 +19,62 @@ class Projects extends Component {
             case 0: //javascript
                 return(
                     <div className="grid">
-                        <ProjectCard url='https://github.com/florovarelaa/JS-GasStations'
+                        <ProjectCard repository='https://github.com/florovarelaa/JS-GasStations'
                                      icon='javascript'
                                      title='Map Gas Stations'
                                      description='An application that shows the gas stations of a region in a map.'
+                                     url='https://florovarelaa.github.io/JS-GasStations/'
+                        />
+                        <ProjectCard repository='https://github.com/florovarelaa/JS-costos-calculator'
+                                     icon='javascript'
+                                     title='Money Division'
+                                     description='A javascript application to divide money between different people.'
+                                     url='http://costscalculator.surge.sh/'
                         />
                     </div>
                 );
             case 1: //react
                 return(
                     <div className="grid">
-                        <ProjectCard url= 'https://github.com/florovarelaa/React-portfolio'
+                        <ProjectCard repository= 'https://github.com/florovarelaa/React-portfolio'
                                      icon='react'
                                      title='Portfolio'
                                      description='My own personal Portfolio'
+                                     url= 'http://flawless-ocean.surge.sh/'
                         />
-                        <ProjectCard url='https://github.com/florovarelaa/React-RoboFriends'
+                        <ProjectCard repository= 'https://github.com/florovarelaa/React-Css-Filters'
+                                     icon='react'
+                                     title='CSS Filters'
+                                     description='A React app for applying css filters to an image.'
+                                     url= 'http://cssfilters.surge.sh/'
+                        />
+                        <ProjectCard repository='https://github.com/florovarelaa/React-RoboFriends'
                                      icon='react'
                                      title='Robo Friends'
                                      description='App for filtering Card Components'
+                                     url= 'http://tremendous-cakes.surge.sh/'
                         />
                     </div>
                 );
             case 2: //unity
                 return(
                     <div className="grid">
-                        <ProjectCard url='https://github.com/florovarelaa/Unity-Hit-The-Targets'
+                        <ProjectCard repository='https://github.com/florovarelaa/Unity-Hit-The-Targets'
                                      icon='unity'
                                      title='Hit the Targets'
                                      description='A top down shooting game'
                         />
-                        <ProjectCard url='https://github.com/florovarelaa/Unity-UnfairPlatformer'
+                        <ProjectCard repository='https://github.com/florovarelaa/Unity-UnfairPlatformer'
                                      icon='unity'
                                      title='Unfair Platformer'
                                      description='A not simple nor fair platformer game'
                         />
-                        <ProjectCard url='https://github.com/florovarelaa/Unity-Patrol-Animal-Zone'
+                        <ProjectCard repository='https://github.com/florovarelaa/Unity-Patrol-Animal-Zone'
                                      icon='unity'
                                      title='Patrol Animal Zone'
                                      description='A small game with an abilty sistem'
                         />
-                        <ProjectCard url='https://github.com/florovarelaa/Unity-Flappy-Bird'
+                        <ProjectCard repository='https://github.com/florovarelaa/Unity-Flappy-Bird'
                                      icon='unity'
                                      title='Flappy Bird'
                                      description='A flappy bird clone'

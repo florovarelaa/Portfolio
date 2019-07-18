@@ -9,7 +9,7 @@ class ProjectCard extends Component {
     render() {
         return(
             <div className="project-card project-card-medium">
-                <a href={this.props.url} target="_blank" rel="noopener noreferrer">
+                <a href={this.props.repository} target="_blank" rel="noopener noreferrer">
                     <ProjectCardSlider>
                         <CardIcon icon={this.props.icon}/> 
                         <ProjectCardTitle  className="title title-bottom title-center">
