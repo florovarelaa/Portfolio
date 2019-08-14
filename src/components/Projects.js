@@ -54,6 +54,11 @@ class Projects extends Component {
                                     description='An application that shows the gas stations of a region in a map.'
                                     url='https://florovarelaa.github.io/JS-GasStations/'
                         />
+                        <ProjectCard icon='javascript'
+                                     title='Jockey Club Buenos Aires'
+                                     description='App for members of the Jockey Club, Bs As, Argentina.'
+                                     url='https://play.google.com/store/apps/details?id=com.jockeyclub.socios'
+                        />
                     </div>
                 );
             case 2: //unity
