@@ -46,7 +46,7 @@ class Projects extends Component {
                                     icon='javascript'
                                     title='Money Division'
                                     description='A javascript application to divide money between different people.'
-                                    url='http://costscalculator.surge.sh/'
+                                    url='http://florovarelaa.divider.surge.sh/'
                         />
                         <ProjectCard repository='https://github.com/florovarelaa/JS-GasStations'
                                     icon='javascript'

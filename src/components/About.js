@@ -10,6 +10,8 @@ class About extends Component {
                     <p className="about-banner-text">Hello, my name is <span className="about-name">Florencio Varela</span>.</p>
                     <p className="about-banner-text">I'm an <span>Informatic Engineering</span> student and <span> Developer</span> from Argentina.</p>
                     <p className="about-banner-text">I'm quietly confident, naturally curious, and perpetually improving my skills. I design and code beautiful simple things, and I <span>love what I do</span>.</p>
+                    <p className="about-banner-text">I have managed different projects. This role allowed me to develop <span>Management Knowledge</span>, experience and skills to bring projects to successful completion. It also encouraged me to prepare the <span>PMP Exam</span>.</p>
+                    <p className="about-banner-text">As a developer I enjoy building <span>Fast & Responsive</span> applications.</p>
                     <p className="about-banner-text">I started my career as a QA tester.
                     This brought me the possibility to develop different <span>skills</span> such as:</p>
                     <ul className="about-banner-text">
@@ -18,8 +20,10 @@ class About extends Component {
                         <li>Attention to Detail</li>
                         <li>Experience with Agile Development Process</li>
                     </ul>
-                    <p className="about-banner-text">After obtaining knowledge and experience as a member of the QA team I migrated to building things!</p>
-                    <p className="about-banner-text">As a developer I enjoy building <span>Fast & Responsive</span> applications.</p>
+                    <p className="about-banner-text">After obtaining <span>Knowledge & Experience</span> as a member of the QA team I migrated to building things!</p>
+                    <p className="about-banner-text">If I had to describe myself with one sentence it would be:</p>
+                    <p className="about-banner-text"><span>Learn to Love to Learn</span></p>
+                    <p className="about-banner-text">My <span>Interests</span> are: Javascript, VR/AR, Machine Learning, IA</p>
             {/* </div> */}
             </Banner>
         )

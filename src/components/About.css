@@ -3,6 +3,7 @@
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 2em;
+    margin-top: 3%;
 }
 
 .about-banner-text span {
@@ -11,9 +12,10 @@
 }
 
 .about-banner-text p{
-    margin: 0px;
     color: #f0f0f0;
     font-size: 20px;
+    margin: 0px;
+    margin-top: 2px;
     padding: 1em;
 }
 
