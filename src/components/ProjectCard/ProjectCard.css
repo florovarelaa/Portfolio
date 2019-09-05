@@ -29,11 +29,11 @@
 
 .project-card-description {
     top: 100%;
-    color: #a420be;
+    color: #ff59f9;
 }
 
 .project-card:hover {
-    box-shadow: 0px 0px 20px #a420be; 
+    box-shadow: 0px 0px 20px #ff59f9; 
     transform: scale(1.3);
 }
 

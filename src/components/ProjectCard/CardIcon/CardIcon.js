@@ -42,7 +42,7 @@ class CardIcon extends Component {
 
     render () {
         return(
-            <div className="icon-center">
+            <div className="icon-color">
                 {this.getIcon(this.props.icon)}
             </div>
         )

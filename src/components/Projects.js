@@ -119,7 +119,7 @@ class Projects extends Component {
                                         this.blurEffect(this.state.blurTime)
                                     }
                                 }
-                            ripple> 
+                            > 
                             {/* <Link
                                 to={`/projects/javascript`}
                             > */}

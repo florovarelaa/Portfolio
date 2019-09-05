@@ -5,6 +5,7 @@
   }
 
   .tabs-container {
+    font-weight: 600;
     position: relative;
     margin-bottom: 2%;
   }
@@ -22,8 +23,19 @@
   }
   
   .is-active {
-    color: #878787 !important;
+    color: #ffffff !important;
     background: none !important;
+  }
+
+  .is-active:before {
+    content : "";
+    position: absolute;
+    left    : 50%;
+    bottom  : 0;
+    height  : 2px;
+    transform: translateX(-50%);
+    width   : 50%;  /* or 100px */
+    border-bottom: 2px solid #ff59f9;
   }
 
   .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
