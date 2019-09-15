@@ -23,7 +23,7 @@ class About extends Component {
                     <p className="about-banner-text">After obtaining <span>Knowledge & Experience</span> as a member of the QA team I migrated to building things!</p>
                     <p className="about-banner-text">Later on, I began to <span>Manage</span> different <span>Team</span> which included <span>Members</span> with different skills.</p>
                     <p className="about-banner-text">If I had to describe myself with one sentence it would be:</p>
-                    <p className="about-banner-text"><span>Learn to Love to Learn</span></p>
+                    <p className="about-banner-text"><span>Learn to Love to Learn</span> Learn2♥2Learn</p>
                     <p className="about-banner-text">My <span>Interests</span> are: Javascript, VR/AR, Machine Learning, IA</p>
             {/* </div> */}
             </Banner>

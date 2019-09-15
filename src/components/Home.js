@@ -9,7 +9,10 @@ class Home extends Component {
                 <Grid className='landing-grid'>
                     <Cell col={12}>
                         <div className="banner-text">
-                            <h1><span className="font-dancing-script-cursive color-ff59f9">Florencio Varela</span>   <span className="font-dancing-script-cursive font-letter-spacing-2">Developer</span></h1>
+                            <h1>
+                                <span className="font-podkova-script color444444">:): </span><span className="font-podkova-script font-letter-spacing-2 colorf0f0f0">However you Want</span>
+                            </h1>
+                            <h1>Florencio Varela</h1>
                             <div className="social-links"> 
                                 {/* Linkedin */}
                                 <a href="https://www.linkedin.com/in/florovarelaa/" target="_blank" rel="noopener noreferrer">
@@ -20,13 +23,13 @@ class Home extends Component {
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
                                 {/* Facebook */}
-                                <a href="https://www.facebook.com/florovarelaa" target="_blank" rel="noopener noreferrer">
+                                {/* <a href="https://www.facebook.com/florovarelaa" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-facebook-square" aria-hidden="true" />
-                                </a>
+                                </a> */}
                                 {/* Instagram */}
-                                <a href="https://www.instagram.com/florovarelaa" target="_blank" rel="noopener noreferrer">
+                                {/* <a href="https://www.instagram.com/florovarelaa" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-instagram" aria-hidden="true" />
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </Cell>

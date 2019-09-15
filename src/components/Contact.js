@@ -16,7 +16,7 @@ class Contact extends Component {
                     url="https://github.com/florovarelaa"
                     description="/florovarelaa"
                 />
-                <AboutCard 
+                {/* <AboutCard 
                     icon="facebook" 
                     description="/florovarelaa"
                     url="https://www.facebook.com/florovarelaa"
@@ -25,7 +25,7 @@ class Contact extends Component {
                     icon="instagram" 
                     url="https://www.instagram.com/florovarelaa"
                     description="/florovarelaa"
-                />
+                /> */}
             </div>
         )
     }

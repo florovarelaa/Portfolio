@@ -33,7 +33,7 @@
 
 .toolbar-navigation-items a {
     color: #f0f0f0;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Podkova', serif;
     font-size: 3vw;
     text-decoration: none;
     padding: 0 1rem;
@@ -43,7 +43,7 @@
 }
 
 .active {
-    color:  #ff59f9 !important;
+    color:  #444444 !important;
 }
 
 @media only screen and (max-width: 768px) {

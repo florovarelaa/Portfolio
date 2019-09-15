@@ -26,7 +26,7 @@
   }
 
   .contact-list a {  
-    font-family: 'Dancing Script';
+    font-family: 'Podkova', serif;
     font-size: 130%;
     text-align: justify;
     color: #f0f0f0;
@@ -41,7 +41,7 @@
     width: 20vw;
     height: 10vw;
     display: inline-block;
-    background: linear-gradient(#231f20, #333333);
+    background: linear-gradient(#231f20, #444444);
     margin: 10px;
     position: relative;
     cursor: pointer;
@@ -58,7 +58,7 @@
     font-size: 4vw;
     line-height: 200%;
     text-align: center;
-    background: linear-gradient(#333333, #231f20);
+    background: linear-gradient(#444444, #231f20);
     z-index: 1;
     transition: transform 0.5s;
   }

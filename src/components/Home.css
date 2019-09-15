@@ -14,7 +14,7 @@
   }
     
   .banner-text {
-    background-color: #0000006A;
+    background-color: transparent;
     width: 60%;
     margin: auto;
     margin-bottom: 5%;
@@ -31,14 +31,8 @@
   
   .banner-text h1 {
     font-size: 50px;
-    color: #f0f0f0;
+    color: #444444;
     margin-top: 0;
-  }
-  
-  .banner-text hr {
-    border-top: 5px dotted white;
-    width: 75%;
-    margin: auto;
   }
   
   .banner-text p {
@@ -47,8 +41,8 @@
     padding: 1em;
   }
   
-  .font-dancing-script-cursive {
-    font-family: 'Dancing Script', cursive;
+  .font-podkova-script {
+    font-family: 'Podkova', serif;
   }
 
   .font-letter-spacing-2 {
@@ -83,11 +77,15 @@
   }
 
   .social-links i:hover {
-    color: #878787;
+    color: #444444;
   }
   
-  .color-ff59f9 {
-    color:  #ff59f9;
+  .colorf0f0f0 {
+    color: #f0f0f0;
+  }
+
+  .color444444 {
+    color:#444444;
   }
 
   @media only screen and (max-width: 768px) {

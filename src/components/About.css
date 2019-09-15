@@ -1,6 +1,7 @@
 .about-banner-text {
-    color: #f0f0f0 !important;
+    color: #444444 !important;
     font-size: 20px;
+    font-weight: 600;
     letter-spacing: 2px;
     line-height: 2em;
     margin-top: 3%;
@@ -8,11 +9,11 @@
 
 .about-banner-text span {
     font-size: 30px;
-    color:  #ff59f9;
+    color:  #f0f0f0;
 }
 
 .about-banner-text p{
-    color: #f0f0f0;
+    color: #444444;
     font-size: 20px;
     margin: 0px;
     margin-top: 2px;
@@ -28,7 +29,7 @@ li {
 }
 
 .about-name {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Podkova', serif;
     font-size: 40px !important;
 }
 

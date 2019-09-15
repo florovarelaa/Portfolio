@@ -1,5 +1,5 @@
   .category-tab {
-    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Podkova', serif; */
     color: #f0f0f0;
     font-size: 1.5vw;
   }
@@ -35,7 +35,7 @@
     height  : 2px;
     transform: translateX(-50%);
     width   : 50%;  /* or 100px */
-    border-bottom: 2px solid #ff59f9;
+    border-bottom: 2px solid #333333;
   }
 
   .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {

@@ -1,7 +1,7 @@
 .about-card{
     font-family: "Libre Baskerville", serif; 
     display: inline-block;
-    background:  #333333;
+    background:  #444444;
     border-bottom: 2px solid #231f20;
     margin: 10% 1% 0% 1%;
     position: relative;
@@ -38,7 +38,7 @@
 
 .about-card span {
     width: 100%;
-    font-family: 'Dancing Script';
+    font-family: 'Podkova', serif;
     font-size: 130%;
     color: #f0f0f0;
     padding: 8px;
@@ -55,7 +55,7 @@
     font-size: 2.5vw;
     line-height: 300%;
     text-align: center;
-    background: linear-gradient(#333333, #231f20);
+    background: linear-gradient(#444444, #231f20);
     z-index: 1;
     transition: transform 0.5s;
 }
