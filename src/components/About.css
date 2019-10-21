@@ -1,6 +1,6 @@
 .about-banner-text {
-    color: #444444 !important;
-    font-size: 20px;
+    color: #ff59f9 !important;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 2em;
@@ -13,7 +13,7 @@
 }
 
 .about-banner-text p{
-    color: #444444;
+    color: #facb4b;
     font-size: 20px;
     margin: 0px;
     margin-top: 2px;

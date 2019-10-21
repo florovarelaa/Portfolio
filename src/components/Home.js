@@ -9,10 +9,7 @@ class Home extends Component {
                 <Grid className='landing-grid'>
                     <Cell col={12}>
                         <div className="banner-text">
-                            <h1>
-                                <span className="font-podkova-script color444444">:): </span><span className="font-podkova-script font-letter-spacing-2 colorf0f0f0">However you Want</span>
-                            </h1>
-                            <h1>Florencio Varela</h1>
+                            <h1 className='colorf0f0f0'>Florencio Varela </h1>
                             <div className="social-links"> 
                                 {/* Linkedin */}
                                 <a href="https://www.linkedin.com/in/florovarelaa/" target="_blank" rel="noopener noreferrer">
