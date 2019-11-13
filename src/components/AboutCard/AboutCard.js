@@ -20,6 +20,10 @@ class AboutCard extends Component {
                 return (
                     <i className="fa fa-instagram" aria-hidden="true" />
                 );
+            case 'cv':
+                return (
+                <i className="far fa-address-book" aria-hidden="true"/>
+                );
             default:
                 return (
                     <i className="fa fa-linkedin-square" aria-hidden="true" />

@@ -16,6 +16,11 @@ class Contact extends Component {
                     url="https://github.com/florovarelaa"
                     description="/florovarelaa"
                 />
+                <AboutCard 
+                    icon="cv" 
+                    url="https://docs.google.com/document/d/1nCUU7X0g2KLakPU4itfefpKEeFNqIh7rxFM9_lHZVkM/edit?usp=sharing"
+                    description="/florovarelaa"
+                />
                 {/* <AboutCard 
                     icon="facebook" 
                     description="/florovarelaa"

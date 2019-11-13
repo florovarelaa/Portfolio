@@ -19,6 +19,9 @@ class Home extends Component {
                                 <a href="https://github.com/florovarelaa" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
+                                <a href="https://docs.google.com/document/d/1nCUU7X0g2KLakPU4itfefpKEeFNqIh7rxFM9_lHZVkM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <i className="far fa-address-book" aria-hidden="true"/>
+                                </a>
                                 {/* Facebook */}
                                 {/* <a href="https://www.facebook.com/florovarelaa" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-facebook-square" aria-hidden="true" />
