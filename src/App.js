@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import MainRouter from './components/MainRouter'
-import Navbar from './components/Navbar/Navbar.js'
+import MainRouter from './components/MainRouter';
+import Navbar from './components/Navbar/Navbar.js';
 import { Layout, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Blur from 'react-css-blur';
@@ -31,7 +31,7 @@ class App extends Component {
   
   render() {
     return (
-        <Layout>
+      <Layout>
             <Navbar>
                   {/* maps the navBar items into the NavBar */}
                     {this.items.map((item, index) => 
@@ -51,7 +51,7 @@ class App extends Component {
               <MainRouter/>
           </Content>
           </Blur>
-        </Layout>
+      </Layout>
     );
   }
 }

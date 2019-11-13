@@ -4,7 +4,7 @@ body {
   background: linear-gradient(to right, #A0A0A0, #A0A0A0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
   font-family: "Libre Baskerville", serif;  */
 
-  background-image: url("./assets/background_0.jpg");
+  /* background-image: url("./assets/background_0.jpg"); */
   background-size: cover;
 
   overflow: hidden;

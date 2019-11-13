@@ -11,6 +11,8 @@ import { combineReducers, createStore } from 'redux';
 import blurReducer from './reducers/blurReducer';
 import itemReducer from './reducers/itemReducer';
 import { Provider } from 'react-redux';
+import LazyImage from './components/LazyImage/LazyImage.js';
+const backgroundImage = require('./assets/background_0.jpg')
 
 const particlesOptions = {
     particles: {
@@ -39,6 +41,7 @@ ReactDOM.render(
             <Provider store={store}>
               <BrowserRouter>
               <div>
+                  <LazyImage src={backgroundImage}/>
                   <Particles className="particles" params={particlesOptions} />
                   <App />
               </div>
