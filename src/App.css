@@ -6,14 +6,8 @@ body {
 
   /* background-image: url("./assets/background_0.jpg"); */
   background-size: cover;
-
-  overflow: hidden;
 }
 
 .content {
   margin-top: 80px;
-}
-
-::-webkit-scrollbar { 
-  display: none; 
 }

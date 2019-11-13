@@ -16,7 +16,7 @@ class LazyImage extends React.Component {
 
   render() {
     return (
-    <img src={this.state.src || this.props.placeholder} alt="background can't be displayed" style={{
+    <img src={this.state.src || this.props.placeholder} alt="" style={{
       position:"absolute",
       zIndex: -2,
       height: "100%",
