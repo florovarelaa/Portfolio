@@ -7,21 +7,15 @@
     overflow: hidden; /* Makes the effect of the project-card */
     transition: transform 0.5s;
     border-radius: 5%;
-    min-width: 175px;
+    min-width: 300px;
 }
 
 .project-card-medium {
-    width: 23%;
-    height: 9em;
-}
-
-.project-card-large {
-    width: 50%;
-    height: 15em;
+    height: 120px;
 }
 
 .project-card a {  
-    font-size: 100%;
+    font-size: 25px;
     text-align: justify;
     color: #f0f0f0;
     text-decoration: none;
@@ -45,7 +39,7 @@
     transform: translateX(-50%);
     top: 40%;
     left: 50%;
-    font-size: 100%;
+    font-size: 30px;
 }
 
 .project-card-icon {
