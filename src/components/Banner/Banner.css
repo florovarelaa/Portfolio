@@ -7,6 +7,7 @@
     padding: 1em;
     /* overflow: scroll; */
     overflow-y:scroll;
+    overflow-x: hidden;
 }
 
 .h50 {
@@ -29,20 +30,19 @@
 /* width */
 .banner::-webkit-scrollbar {
     width: 10px;
-    height:50px;
+    /* height:50px; */
   }
   
   /* Track */
   .banner::-webkit-scrollbar-track {
     background: #FFFFFF1F;
     height:50px;
-    margin: 110px 0;
+    /* margin: 110px 0; */
   }
   
   /* Handle */
   .banner::-webkit-scrollbar-thumb {
     
-    border-radius: 100%;
     background: #fd8700;
 
     border-radius: 15px; 

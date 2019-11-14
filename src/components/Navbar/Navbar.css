@@ -39,11 +39,11 @@
     padding: 0 1rem;
 }
 .toolbar-navigation-items a:hover {
-    color: #878787;
+    color: #facb4b;
 }
 
 .active {
-    color:  #444444 !important;
+    color:  #e79537 !important;
 }
 
 @media only screen and (max-width: 768px) {
