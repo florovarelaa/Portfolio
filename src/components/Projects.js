@@ -48,16 +48,22 @@ class Projects extends Component {
                                     description='A javascript application to divide money between different people.'
                                     url='http://florovarelaa.divider.surge.sh/'
                         />
+                        <ProjectCard icon='javascript'
+                                     title='Jockey Club Buenos Aires'
+                                     description='App for members of the Jockey Club, Bs As, Argentina.'
+                                     url='https://play.google.com/store/apps/details?id=com.jockeyclub.socios'
+                        />
+                        <ProjectCard repository='https://github.com/florovarelaa/Hermes-1'
+                                     icon='javascript'
+                                     title='Hermes Project'
+                                     description='Ticket report management app'
+                                     url=''
+                        />
                         <ProjectCard repository='https://github.com/florovarelaa/JS-GasStations'
                                     icon='javascript'
                                     title='Map Gas Stations'
                                     description='An application that shows the gas stations of a region in a map.'
                                     url='https://florovarelaa.github.io/JS-GasStations/'
-                        />
-                        <ProjectCard icon='javascript'
-                                     title='Jockey Club Buenos Aires'
-                                     description='App for members of the Jockey Club, Bs As, Argentina.'
-                                     url='https://play.google.com/store/apps/details?id=com.jockeyclub.socios'
                         />
                     </div>
                 );
