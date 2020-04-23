@@ -33,6 +33,10 @@ class CardIcon extends Component {
                 return (
                     <i className="fa fa-instagram" aria-hidden="true" />
                 );
+            case 'node': 
+                return (
+                    <i className="fab fa-node" aria-hidden="true" />
+                )
             default:
                 return (
                     <i className="fab fa-javascript" aria-hidden="true" /> 
