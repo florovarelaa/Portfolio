@@ -1,4 +1,5 @@
 import React from 'react';
+import './LazyImage.css'
 
 class LazyImage extends React.Component {
   state = { src: null };
@@ -12,17 +13,11 @@ class LazyImage extends React.Component {
     imageLoader.onload = () => {
       this.setState({ src });
     };
-  }
+  };
 
   render() {
     return (
-    <img src={this.state.src || this.props.placeholder} alt="" style={{
-      position:"absolute",
-      zIndex: -2,
-      height: "100%",
-      width: "100%",
-     }}
-    />
+    <img className="background-image" src={this.state.src || this.props.placeholder} alt=""/>
     )
   }
 }
