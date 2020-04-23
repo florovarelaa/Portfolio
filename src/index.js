@@ -12,7 +12,8 @@ import blurReducer from './reducers/blurReducer';
 import itemReducer from './reducers/itemReducer';
 import { Provider } from 'react-redux';
 import LazyImage from './components/LazyImage/LazyImage.js';
-const backgroundImage = require('./assets/background_0.jpg')
+const backgroundImageDesktop = require('./assets/background_0.jpg')
+const backgroundImageMobile = require('./assets/background_0_mobile.jpg')
 
 const particlesOptions = {
     particles: {
@@ -41,7 +42,7 @@ ReactDOM.render(
             <Provider store={store}>
               <BrowserRouter>
               <div>
-                  <LazyImage src={backgroundImage}/>
+                  <LazyImage srcDesktop={backgroundImageDesktop} srcMobile={backgroundImageMobile}/>
                   <Particles className="particles" params={particlesOptions} />
                   <App />
               </div>
