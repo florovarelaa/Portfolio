@@ -47,6 +47,12 @@ class Projects extends Component {
                                     description='My own personal Portfolio'
                                     url= 'https://florovarelaa.surge.sh'
                         />
+                        <ProjectCard repository= 'https://github.com/florovarelaa/Pizza-Ecommerce-FE'
+                                    icon='react'
+                                    title='Pizza Order'
+                                    description='Pizza e-commerce cart application built with React & Redux and Redux-Thunk'
+                                    url= 'https://pizza-ecommerce.herokuapp.com/'
+                        />
                         <ProjectCard repository= 'https://github.com/florovarelaa/React-Css-Filters'
                                     icon='react'
                                     title='CSS Filters'
@@ -57,12 +63,6 @@ class Projects extends Component {
                                     icon='react'
                                     title='Intercarnes'
                                     description='Web and Mobile app oriented to Cattle Logistic'
-                        />
-                        <ProjectCard repository='https://github.com/florovarelaa/React-RoboFriends'
-                                    icon='react'
-                                    title='Robo Friends'
-                                    description='App for filtering Card Components'
-                                    url= 'http://tremendous-cakes.surge.sh/'
                         />
                     </div>
                 );
@@ -75,10 +75,15 @@ class Projects extends Component {
                                     description='npm module with algorithms to convert between binary and decimal numbers.'
                                     url= 'https://www.npmjs.com/package/conbaseor'
                         />
-                        <ProjectCard repository='https://github.com/florovarelaa/Unity-Hit-The-Targets'
+                        <ProjectCard repository='https://github.com/florovarelaa/node-mysql-api-bootstrap'
                                     icon='node'
                                     title='Node-MySQL-Api-Bootstrap'
                                     description='Bootstrap Api with Auth and CRUD endpoints among others'
+                        />
+                        <ProjectCard repository='https://github.com/florovarelaa/Pizza-Ecommerce-BE'
+                                    icon='node'
+                                    title='Pizza Order'
+                                    description='Pizza e-commerce cart BE application built with Express and MySql'
                         />
                     </div>
                 );

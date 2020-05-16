@@ -7,11 +7,12 @@ class About extends Component {
         return(
             <Banner>
                     <p className="about-banner-text">Hello, my name is <span className="about-name">Florencio Varela</span></p>
-                    <p className="about-banner-text">I'm a <span>Full Stack Developer</span> and <span> Informatic Engineer</span></p>
-                    <p className="about-banner-text">In the course of my career I developed different <span>skills</span> such as:</p>
+                    <p className="about-banner-text">I'm a <span>Full Stack Developer</span> and <span> Systems Engineer</span></p>
+                    <p className="about-banner-text">Throughout my career I developed many <span>skills</span> such as:</p>
                     <ul className="about-banner-text">
                         <li><span>Problem-Solving</span> Skills</li>
                         <li><span>Analytical Thinking</span></li>
+                        <li><span>Coding experience</span> in different languages</li>
                         <li>Producing <span>clean</span>, efficient <span>code</span> based on specifications</li>
                         <li><span>Testing</span> and <span>Deploying</span> programs and systems</li>
                     </ul>
